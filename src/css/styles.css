@@ -84,6 +84,23 @@ header {
     }
 }
 
+/* css all styles */
+
+p {
+    font-family: 'inter', sans-serif;
+    font-size: clamp(14px , 1vw+1rem, 16px);
+    color: black;
+
+
+}
+
+h1 {
+    font-family: 'inter', sans-serif;
+    font-size: clamp(16px , 1vw+1rem, 24px);
+    color: black;
+}
+
+
 /* ==========  HEADER    =========== */
 /* -------------dekstop footer-------- */
 
@@ -308,9 +325,70 @@ h1 {
         margin: 0;
     }
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 5rem;
     margin-bottom: 7rem;
 }
+
+/* --------about-us-page---------- */
+
+.body-centered{
+    >h1{
+        border-bottom: 1px solid black;
+        max-width: 33%;
+        margin-bottom: 0;
+    }
+}
+
+.about-content {
+    margin-bottom: 8rem;
+    gap: 3rem;
+
+    >.about-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        >img {
+            width: 100%;
+            max-width: 50%;
+            height: 100%;
+
+        }
+
+        >.top-info {
+            margin: 4rem;
+            margin-left: 0;
+
+        }
+
+        >.bottom-info{
+            margin: 4rem;
+        }
+    }
+}
+
+@media (max-width: 970px){
+.about-content{
+    >.about-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        >img{
+            width: 100%;
+
+        }
+    }
+}
+
+}
+
