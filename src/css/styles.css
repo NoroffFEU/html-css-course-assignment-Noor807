@@ -168,7 +168,7 @@ h1 {
 
 }
 
-/* -------------index body content-------- */
+/* -------------index.html-page-------- */
 
 #body-index {
     display: flex;
@@ -205,9 +205,11 @@ h1 {
 
     >img {
         width: 100%;
-        max-width: 450px;
+        max-width: 500px;
+        height: 100%;
 
     }
+    
 
     >h2 {
         font-family: 'inter', sans-serif;
@@ -230,22 +232,33 @@ h1 {
 .new-collection {
     width: 100%;
     margin-top: 3rem;
+    max-width: 50%;
+    height: 100%;
 }
 
 .about-brand {
     display: flex;
     flex-direction: column;
+    margin-bottom: 8rem;
+    gap: 1rem;
+    margin-top: 3rem;
 
-    >div:first-child {
+
+    >.info-rainyday {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        row-gap: 1rem;
+        
+        
 
-        >img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 500px;
-        }
+       >img{
+        width: 100%;
+        max-width: 500%;
+        border-radius: 400%;
+       }
+    
+       
 
         >p {
             width: 50ch;
