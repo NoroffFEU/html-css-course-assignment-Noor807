@@ -1,0 +1,101 @@
+<!DOCTYPE html> <html lang="en"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title> </title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    </head> 
+
+ <body class="centered"> 
+    <header>
+       <section> 
+         <div>
+          <img src="assets/imgsrc/RainyDaysLogo.png" alt="Rainy Days Logo"> </div>
+      </section>
+    </header>
+
+ <section id="navbar"> 
+    <section>
+       <div> 
+          <ul>
+            <li> <a href="Home">Home</a></li> 
+            <li><a href="News">News</a></li> 
+            <li> <a href="Men">Men</a></li>
+            <li><a href="Women">Women</a></li>
+          </ul> 
+      </div>
+    </section>
+
+      <section>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-bag-shopping"></i> </div>
+      </section>
+   </nav>
+
+          <img src="assets/imgsrc/Header-big-picture.png" alt=""> 
+        
+
+          <section id="section-one">
+
+          <div class="shop-button">
+             <a href="#shopnow">Shop now</a>
+    <section>
+      <div id="men-women-collection"> <div class="Men">
+         <img src="assets/imgsrc/men-hicking.jpg"alt="Noroff Logo">
+         <h1>Men,s_collection</h1>
+         <p>Our selection for men</p>
+      </div>
+          <div class="Women">
+             <img src="assets/imgsrc/girl-hiking.png" alt="noroff-logo"> 
+              <h1>Women_collection</h1>
+             <p>A very comfortable stylish easy to wear </p>
+         </div> 
+    </section>
+
+      <img src="assets/imgsrc/Black week sale.png" alt="" srcset="">
+
+    <section>
+       <img src="assets/imgsrc/men-women-red-yellow.png" alt="" srcset=""> <h1>Coming soon 2024</h1>
+       <p>Introducing new winter</p>
+    </section>
+
+    <section> 
+        <div>
+           <p1>Our winter collection is here. This season's collection is for all occasions
+             and is also inspired by the shades that belong to the season. Explore our jackets now and find your style </p>
+              <img src="assets/imgsrc/boy_gil_green.png" alt="" srcset="">
+        </div>
+           <div>
+             <h2>Test_Winner</h2>
+             <p> Our jackets has a high score on the three most important test areas -
+              insulation ability, water proof and wind proof in the 2023 year's Best in test</p>
+              <img src="assets/imgsrc/boy_girl_blue.png" alt="" srcset=""> 
+           </div>
+    </section>
+    
+    </body>
+    <footer>
+        <div>
+          <img src="assets/imgsrc/RainyDays_Logo.png" alt="" srcset=""> </div>
+       <div> 
+          <ul>
+             <li>About us</li>
+             <li>Privacy policy</li>
+             <li>Help</li> 
+             <li>Contact us</li>
+          </ul> 
+      </div>
+     <div> 
+         <ul>
+            <li>Accessibility</li> 
+            <li>Shipping</li> 
+            <li>Returns</li>
+         </ul> 
+     </div>
+         <div> 
+            <p>Socials</p> 
+            <i><i class="fa-brands fa-instagram"></i>
+            <i><i class="fa-brands fa-x-twitter"></i>
+            <i><i class="fa-brands fa-square-facebook"></i>
+         </div>
+    </footer>
+ </html>

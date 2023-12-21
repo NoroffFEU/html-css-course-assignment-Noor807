@@ -6,14 +6,311 @@
 /* Feel free to add as many of these imports as you need */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    width: 100%;
 }
 
 .centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body-centered {
+    width: 80%;
+
+}
+
+header {
+    width: 100%;
+
+}
+
+.Dekstop-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+
+    >div {
+        margin: 1rem;
+
+        >a {
+            text-decoration: none;
+            margin: 0rem 1rem;
+            color: black;
+            font-family: 'inter', sans-serif;
+            font-style: bold;
+            font-size: 20px;
+            gap: 3px;
+            padding: 3px 8px;
+            border-style: none;
+            text-size-adjust: 30px;
+            display: inline;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+
+        }
+
+        >a:hover {
+            color: red;
+        }
+
+        >i {
+            font-size: 20px;
+            color: black;
+            margin-left: 2rem;
+
+        }
+    }
+}
+
+.header-logo {
+    background-image: linear-gradient(#53a8ad, #fff);
+
+    >img {
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem;
+        margin-left: 4rem;
+    }
+}
+
+/* ==========  HEADER    =========== */
+/* -------------dekstop footer-------- */
+
+#dekstop-footer {
+    background-image: linear-gradient(#53a8ad, #fff);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    >img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+
+    >a {
+        font-family: 'inter', sans-serif;
+        font-size: clamp(14px, 0.5vw + 1rem, 24px);
+        margin: 0.5rem 0rem;
+        text-decoration: none;
+        color: black;
+
+    }
+
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.socials-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+
+    >p {
+        font-family: 'inter', sans-serif;
+        font-size: clamp(14px, 0.5vw + 1rem, 24px);
+        margin: 0;
+    }
+
+    >div {
+        >a {
+            >i {
+                margin: 5px;
+                color: black;
+                font-size: 40px;
+            }
+        }
+    }
+
+}
+
+/* -------------index body content-------- */
+
+#body-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    >a {
+        background-color: black;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+
+
+    }
+}
+
+.men-women-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
+
+    >img {
+        width: 100%;
+        max-width: 450px;
+
+    }
+
+    >h2 {
+        font-family: 'inter', sans-serif;
+        font-weight: 700;
+        font-size: clamp(16px, 1vw + 1rem, 20px);
+    }
+}
+
+.main-collection {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 4rem 0rem;
+    gap: 7rem;
+
+}
+
+.new-collection {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.about-brand {
+    display: flex;
+    flex-direction: column;
+
+    >div:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        >img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 500px;
+        }
+
+        >p {
+            width: 50ch;
+        }
+
+
+    }
+
+}
+
+/*---------- jacket-store-------*/
+.bread-crumbs {
+    display: flex;
+    border-bottom: 1px solid black;
+    gap: 1.5rem;
+    margin-left: 3rem;
+    padding: 1rem 0.5rem;
+    margin-top: 2rem;
+    max-width: 400px;
+
+    >a {
+        font-family: 'inter', sans-serif;
+        font-style: italic;
+        font-size: clamp(14px, 1vw+1rem, 24px);
+        color: black;
+        flex-direction: row;
+        text-decoration: none;
+
+
+    }
+}
+
+h1 {
+    font-size: clamp(14px, 1vw+1rem, 30px);
+    font-family: 'inter', sans-serif;
+    font-style: bold;
+    color: black;
+    margin-top: 5rem;
+
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px grey;
+    background-color: lightgray;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    >img {
+        width: 100%;
+    }
+
+    >h2 {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+    }
+
+    >p {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+
+    }
+
+    >h3 {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+    }
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    margin-bottom: 7rem;
 }
