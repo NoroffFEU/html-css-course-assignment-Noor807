@@ -115,6 +115,7 @@ h1 {
     >img {
         width: 100%;
         max-width: 300px;
+
     }
 
 
@@ -167,7 +168,7 @@ h1 {
 
 }
 
-/* -------------index.html-page-------- */
+/* -------------index.home.html-page-------- */
 
 #body-index {
     display: flex;
@@ -243,25 +244,19 @@ h1 {
     align-items: center;
     gap: 2rem;
     width: 600%;
-    max-width: 500%;
 
-
-
-    >.info-rainyday {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 4rem;
-        row-gap: 2rem;
-    }
-
-
-
-
-    >img {
+    max-width: 500%>img {
         width: 600px;
         height: 600px;
         border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+
+    >.winter- collection {
+        display: flex;
+        flex-direction: column;
+
     }
 
     >.top {
@@ -272,6 +267,7 @@ h1 {
 
     >.bottom {
         margin: 4rem;
+        s
     }
 
 
@@ -424,11 +420,32 @@ h1 {
 
 /* -----------dekstop-contact-us------------ */
 
-.cover-image{
+.cover-image {
     width: 100;
     height: 100vh;
-    background-position: center;
+    background-position: right top;
     background-size: cover;
     background-image: url(assets/imgsrc/coupleyellow.png);
+
+}
+
+
+
+
+/*------------success.html--------*/
+.middle {
+    text-align: center;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+.a{
+    background-color: black;
+    color: #fff;
+    padding: o.5rem  1rem;
+    text-decoration: none;
+    font-family: 'inter, semi bold , san sherrif';
 
 }
