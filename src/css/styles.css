@@ -108,7 +108,7 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     padding: 2rem;
 
@@ -237,39 +237,7 @@ h1 {
 }
 
 .about-brand {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8rem;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 600%;
-
-    max-width: 500%>img {
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        height: 300px;
-        width: 300px;
-    }
-
-    >.winter- collection {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    >.top {
-        margin: 4rem;
-        margin-left: 0;
-        margin-bottom: 2rem;
-    }
-
-    >.bottom {
-        margin: 4rem;
-        s
-    }
-
+   
 
 
     >p {
@@ -434,18 +402,36 @@ h1 {
 
 /*------------success.html--------*/
 .middle {
-    text-align: center;
-    text-decoration: none;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-}
-.a{
-    background-color: black;
-    color: #fff;
-    padding: o.5rem  1rem;
-    text-decoration: none;
-    font-family: 'inter, semi bold , san sherrif';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
+    >a{
+        background-color: black;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        margin-top: 4px;
+        margin-bottom: 7px;
+
+
+    }
 }
+  .middle p{
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+   
+  }  
+
+   .img{
+    width: 100%;
+    max-width: 50%;
+    height: 40%;
+   }
+    
+
