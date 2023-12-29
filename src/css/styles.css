@@ -5,6 +5,9 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 
+
+
+
 body {
     color: var(--color-primary);
     background-color: var(--color-secondary);
@@ -420,7 +423,7 @@ h1 {
     box-sizing: border-box;
     margin-top: 1rem;
 
-    .Submit{
+    .Submit {
         background-color: black;
         color: #fff;
         padding: 0.5rem 1rem;
@@ -430,7 +433,7 @@ h1 {
         margin-left: 6rem;
     }
 
-  
+
 }
 
 
@@ -450,8 +453,7 @@ h1 {
     align-items: center;
     width: 100%;
 
-    >a {
-
+    a{
         background-color: black;
         color: #fff;
         padding: 0.5rem 1rem;
@@ -460,24 +462,28 @@ h1 {
         margin-bottom: 7px;
     }
 
-    .middle p {
-        padding: 50px;
-        margin: auto;
-        display: grid;
-        width: 300px;
-        text-align: justify;
+}
 
-    }
 
-    .img {
-        width: 100%;
-        max-width: 50%;
-        height: 40%;
-    }
 
-    /*============product info.html=============*/
-    
-.jacket{
+.middle p {
+    padding: 50px;
+    margin: auto;
+    display: column;
+    width: 300px;
+    text-align: justify;
+
+}
+
+.img {
+    width: 100%;
+    max-width: 50%;
+    height: 20px
+}
+
+/*============product info.html=============*/
+
+.jacket {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -489,29 +495,27 @@ h1 {
     padding: 0.5rem;
     gap: 1rem;
 
-    
+
 
 }
 
+.grid-product {
+    display: grid;
+    grid-template-columns: 2;
+    row-gap: 5rem;
+    margin-bottom: 7rem;
+}
 
+.jacket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px grey;
+    background-color: lightgray;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+}
