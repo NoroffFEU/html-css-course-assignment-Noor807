@@ -415,13 +415,20 @@ h1 {
 .contact-container {
     justify-content: left;
     text-align: left;
-    display: grid;
+    display: column;
     flex-direction: column;
     margin-bottom: 2rem;
     margin-left: 6rem;
     padding: 0;
     box-sizing: border-box;
     margin-top: 1rem;
+
+    .contact-img{
+        background-image: url("assets/imgsrc/couple-in-yellow.png");
+        background-repeat: no-repeat;
+        height: 80%;
+        width: 100%;
+    }
 
     .Submit {
         background-color: black;
