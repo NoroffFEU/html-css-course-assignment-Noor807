@@ -412,7 +412,7 @@ h1 {
 .contact-container {
     justify-content: left;
     text-align: left;
-    display: flex;
+    display: grid;
     flex-direction: column;
     margin-bottom: 2rem;
     margin-left: 6rem;
@@ -420,19 +420,19 @@ h1 {
     box-sizing: border-box;
     margin-top: 1rem;
 
-
+    .Submit{
+        background-color: black;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        margin-top: 3rem;
+        margin-bottom: 5px;
+        margin-left: 6rem;
+    }
 
   
 }
-.button{
-    background-color: black;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    margin-top: 3rem;
-    margin-bottom: 4px;
-    margin-left: 6rem;
-}
+
 
 
 
@@ -476,44 +476,42 @@ h1 {
     }
 
     /*============product info.html=============*/
-    .grid {
-        display: grid;
-        flex-direction: row;
-        row-gap: 5rem;
-        margin-top: 7rem;
+    
+.jacket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px black;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    
+
+}
 
 
-    }
-
-    .product-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        border: 1px solid black;
-        background-color: white;
-        width: 100%;
-        max-width: 300px;
-        padding: 0.5rem;
-        gap: 1rem;
-
-        >img {
-            width: 100%;
-        }
-    }
-
-    .items {
-        text-align: right;
 
 
-        .size-button {
-            background-color: F2F9F8;
-            color: black;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            box-sizing: 1px solid black;
 
 
-        }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
