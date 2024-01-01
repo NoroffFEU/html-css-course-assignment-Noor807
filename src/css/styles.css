@@ -24,6 +24,8 @@ body {
     padding: 0;
 }
 
+
+
 .body-centered {
     width: 80%;
 
@@ -222,6 +224,26 @@ h1 {
     }
 }
 
+.black-week {
+    justify-content: center;
+    align-items: center;
+
+    >img {
+        width: 8rem;
+        height: 4rem;
+        
+    }
+}
+
+.coming-soon {
+    justify-content: center;
+    width: 2rem;
+    height: 1rem;
+    margin-top: 2rem;
+
+
+}
+
 .main-collection {
     flex-direction: row;
     display: flex;
@@ -418,29 +440,27 @@ h1 {
     display: column;
     flex-direction: column;
     margin-bottom: 2rem;
-    margin-left: 6rem;
-    padding: 0;
+    margin-left: 4rem;
+    row-gap: 3rem;
     box-sizing: border-box;
-    margin-top: 1rem;
 
-    .contact-img{
-        background-image: url("assets/imgsrc/couple-in-yellow.png");
-        background-repeat: no-repeat;
-        height: 80%;
+    .contact {
+        padding: 12px 20px;
         width: 100%;
-    }
-
-    .Submit {
-        background-color: black;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        margin-top: 3rem;
-        margin-bottom: 5px;
-        margin-left: 6rem;
+        row-gap: 2rem;
     }
 
 
+
+
+}
+
+.big-img {
+    background-image: url(assets/imgsrc/couple-in-yellow.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -460,7 +480,7 @@ h1 {
     align-items: center;
     width: 100%;
 
-    a{
+    a {
         background-color: black;
         color: #fff;
         padding: 0.5rem 1rem;
