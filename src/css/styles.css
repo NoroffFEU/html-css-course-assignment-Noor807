@@ -540,8 +540,6 @@ h1 {
     margin-left: 6rem;
     margin-top: 4rem;
 
-
-
 }
 
 .contact-container {
@@ -649,39 +647,40 @@ h1 {
 
 /*============product info.html=============*/
 
-.jacket {
+.product-info{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    border: 1px black;
-    background-color: white;
-    width: 100%;
-    max-width: 300px;
-    padding: 0.5rem;
-    gap: 1rem;
-
-
-
-}
-
-.grid-product {
-    display: grid;
-    grid-template-columns: 2;
-    row-gap: 5rem;
-    margin-bottom: 7rem;
-}
-
-.jacket {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border: 1px grey;
-    background-color: lightgray;
-    width: 100%;
-    max-width: 300px;
-    padding: 0.5rem;
-    gap: 1rem;
+    padding: 0.5px;
+    float: left;
+    margin: 50px  50px 6px 6px ;
+    
+    
 
+    .jacket{
+        justify-content: flex-start;
+        align-items:left ;
+        >.img{
+            width: 100%;
+            max-width: 100px;
+            height: 300px;
+        }
+        
+    }
+
+   
+    .jacket-info{
+        padding: 10px;
+        margin: auto;
+        width: 700px;
+        align-items: left;
+        
+    }
 }
+.size{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: F2F9F8;
+    box-shadow: 1px grey;
+}
+
