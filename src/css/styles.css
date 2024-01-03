@@ -207,7 +207,7 @@ h1 {
     }
     
     }
-    
+
 }
 
 @media only screen and (max-width: 910px){
@@ -228,6 +228,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95%;
 
     >.main-img{
         width: 100%;
@@ -324,6 +325,7 @@ h1 {
         grid-row: 2 /span 2;
         justify-self: center;
         align-self: center;
+        width: 50%;
 
     }
 
@@ -346,11 +348,8 @@ h1 {
         grid-row: 6 /span 2;
         justify-self: center;
         text-align: center;
+        width: 50%;
 
-    }
-
-    >p {
-        width: 50ch;
     }
 }
 
@@ -360,45 +359,35 @@ h1 {
     height: auto;
     max-width: 400px;
 }
+@media only screen and (max-width: 600px){
+
+    .main-collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .round-img{
+        max-width: 300px;
+    }
+}
 
 @media only screen and (max-width: 990px) {
     .about-brand {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(16, 100px);
-    
-        >.text-one {
-            grid-column: 2 /span 3 ;
-            grid-row: 5 /span 2;
-            justify-self: center;
-            align-self: center;
-    
-        }
-    
-        >.row-img {
-            grid-column: 1 /span 5;
-            grid-row: 1 /span 4;
-            justify-self: center;
-    
-        }
-    
-        >.row-two {
-            grid-column: 1 /span 5;
-            grid-row: 8 /span 2;
-            justify-self: center;
-            align-self: center;
-    
-        }
-    
-        >.text-two {
-            grid-column: 2/span 3;
-            grid-row: 12/span 2;
-            justify-self: center;
-            text-align: center;
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 4rem;
+
+        >p{
+            width: 90%;
+            text-wrap: wrap;
         }
     }
-    
 }
 
 
@@ -586,7 +575,7 @@ h1 {
             padding: 5px 6px;
 
         }
-        >submit {
+        >.submit-button {
             background-color: black;
             color: #fff;
             padding: 0.5rem 1rem;
