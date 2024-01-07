@@ -637,17 +637,24 @@ h1 {
 
 
 .middle p {
-    padding: 12px;
+    padding: 10px;
     margin: auto;
     display: column;
     width: 300px;
-    text-align: justify;
+    text-align: center;
+    margin-top: 0.5rem;
+    >img{
+        margin-top: 7rem;
+    }
 
 }
 
-.img {
+
+.coupple {
     width: 100%;
-    max-width: 50%;
+    max-width: 50px;
+    height: 40px;
+   
     
 }
 
@@ -707,7 +714,7 @@ h1 {
     margin-top: 6px;
     padding: 0.5rem 2rem;
     max-width: 100px;
-   
+
 }
 
 
@@ -725,36 +732,39 @@ h1 {
 
     }
 
-    >.resistance{
+    >.resistance {
         width: 40%;
     }
 }
-.product-addcart{
+
+.product-addcart {
     gap: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 40%;
 
-    >h1{
+    >h1 {
         margin: 0;
     }
 }
-.small-icons{
+
+.small-icons {
     flex-direction: row;
     display: flex;
     align-items: center;
     gap: 1rem;
-   >i{
-    font-size:clamp(18px, 1vw + 1rem ,24px) ;
-   }
-   >p{
-    font-size:clamp(14px, 1vw + 1rem ,16px) ;
 
-   }
+    >i {
+        font-size: clamp(18px, 1vw + 1rem, 24px);
+    }
+
+    >p {
+        font-size: clamp(14px, 1vw + 1rem, 16px);
+
+    }
 
 
 }
 
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
-
