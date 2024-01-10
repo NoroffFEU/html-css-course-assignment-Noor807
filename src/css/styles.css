@@ -399,20 +399,19 @@ h1 {
 .bread-crumbs {
     display: flex;
     border-bottom: 1px solid black;
-    gap: 1.5rem;
-    margin-left: 3rem;
-    padding: 1rem 0.5rem;
+    gap: 1rem;
+    padding: 1rem 0rem;
     margin-top: 2rem;
     max-width: 400px;
+
 
     >a {
         font-family: 'inter', sans-serif;
         font-style: italic;
-        font-size: clamp(14px, 1vw+1rem, 24px);
         color: black;
         flex-direction: row;
         text-decoration: none;
-
+        font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
 
     }
 }
@@ -621,18 +620,20 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 10px;
 
     a {
         background-color: black;
         color: #fff;
         padding: 0.5rem 1rem;
         text-decoration: none;
-        margin-top: 1px;
+        margin-top: 2rem;
         margin-bottom: 7px;
     }
 
 }
-.checkmark{
+
+.checkmark {
     width: 100%;
     max-width: 90px;
     margin-top: 4rem;
@@ -643,20 +644,21 @@ h1 {
 
 
 .middle p {
-    padding: 10px;
     margin: auto;
     display: column;
-    width: 300px;
-    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
     margin-top: 0.5rem;
-    >img{
+
+    >img {
         margin-top: 7rem;
     }
 
 }
 
 
-.Hiking-couple{
+.Hiking-couple {
     width: 100%;
     max-width: 1000;
 }
@@ -766,8 +768,96 @@ h1 {
         font-size: clamp(14px, 1vw + 1rem, 16px);
 
     }
-
-
 }
 
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
+.cart-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.order-review {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: end;
+
+    >span p {
+        width: 140px;
+        text-align: left;
+    }
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+
+    >b {
+        width: 65px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    >p {
+        width: 140px;
+        text-align: left;
+    }
+}
+
+.shipping-info {
+    width: 100%;
+
+    >form p {
+        justify-self: flex-end;
+        color: red;
+
+    }
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 100%;
+
+    >input {
+        width: 95%;
+        margin-bottom: 0.5rem;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
+.cart-bottom{
+    width: 100%;
+    max-width: 400px;
+}
+
+.payment-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    >i {
+        font-size: 2rem;
+
+    }
+}
+
