@@ -424,6 +424,7 @@ h1 {
     }
 
 }
+
 .bread-crumbs {
     display: flex;
     border-bottom: 1px solid black;
@@ -531,7 +532,7 @@ h1 {
 
         >.top-info {
             margin: 0.5rem;
-           
+
 
         }
 
@@ -699,6 +700,7 @@ h1 {
     }
 
 }
+
 .middle {
     display: flex;
     flex-direction: column;
@@ -823,6 +825,25 @@ h1 {
         display: none;
     }
 }
+@media only screen and (max-width: 1060px){
+    .size-button {
+        display: column;
+        box-sizing: border-box;
+        box-shadow: 1px grey;
+    
+        >label {
+            border: 1px solid #000;
+            padding: 0.6rem 1rem;
+            margin-right: 1rem;
+            background-color: #F2F9F8;
+            box-shadow: 2px 3px 8px grey;
+        }
+    
+        >input {
+            display: none;
+        }
+    }
+}
 
 .black-button {
     background-color: #000;
@@ -884,6 +905,7 @@ h1 {
     }
 }
 
+
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
 @media only screen and (max-width: 600px) {
     .Dekstop-navbar {
@@ -913,6 +935,7 @@ h1 {
     }
 
 }
+
 .cart-top {
     display: flex;
     flex-direction: column;
@@ -979,7 +1002,7 @@ h1 {
     }
 }
 
-.cart-bottom{
+.cart-bottom {
     width: 100%;
     max-width: 400px;
 }
@@ -1002,4 +1025,3 @@ h1 {
 
     }
 }
-
