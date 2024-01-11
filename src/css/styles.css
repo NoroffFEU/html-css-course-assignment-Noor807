@@ -504,7 +504,7 @@ h1 {
 .body-centered {
     >h1 {
         border-bottom: 1px solid black;
-        max-width: 22%;
+        max-width: 20%;
         margin-bottom: 0;
     }
 }
@@ -536,7 +536,7 @@ h1 {
         }
 
         >.bottom-info {
-            margin: 4rem;
+            margin: 3rem;
         }
     }
 }
@@ -552,6 +552,7 @@ h1 {
 
             >img {
                 width: 100%;
+                max-width: 500px;
 
             }
         }
