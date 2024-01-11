@@ -275,7 +275,7 @@ h1 {
     >h2 {
         font-family: 'inter', sans-serif;
         font-weight: 700;
-        font-size: clamp(16px, 1vw + 1rem, 20px);
+        font-size: clamp(14px, 1vw + 1rem, 20px);
     }
 }
 
@@ -396,6 +396,34 @@ h1 {
 
 
 /*---------- jacket-store-------*/
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
 .bread-crumbs {
     display: flex;
     border-bottom: 1px solid black;
@@ -476,7 +504,7 @@ h1 {
 .body-centered {
     >h1 {
         border-bottom: 1px solid black;
-        max-width: 33%;
+        max-width: 22%;
         margin-bottom: 0;
     }
 }
@@ -502,8 +530,8 @@ h1 {
         }
 
         >.top-info {
-            margin: 4rem;
-            margin-left: 0;
+            margin: 0.5rem;
+           
 
         }
 
@@ -532,8 +560,36 @@ h1 {
 }
 
 /* ------------Contact-Us------------ */
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
 
-.about-info {
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
+
+.about-rainydays {
     padding: 1rem;
     margin-bottom: 1rem;
     display: grid;
@@ -614,6 +670,34 @@ h1 {
 
 
 /*------------success.html--------*/
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
 .middle {
     display: flex;
     flex-direction: column;
@@ -663,7 +747,36 @@ h1 {
     max-width: 1000;
 }
 
-/*============product info.html=============*/
+/*============product info.html===*/
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
+
 
 .product-info {
     display: flex;
@@ -771,6 +884,34 @@ h1 {
 }
 
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
 .cart-top {
     display: flex;
     flex-direction: column;
