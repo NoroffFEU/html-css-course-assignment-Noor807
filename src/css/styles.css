@@ -114,6 +114,36 @@ h1 {
     color: black;
 }
 
+@media only screen and (max-width: 600px) {
+    .Dekstop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 2rem;
+
+        >.hamburger {
+            >a i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+            }
+        }
+
+        >.search-cart {
+            >i {
+                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+}
+
+
 
 /* ==========  HEADER    =========== */
 /* -------------dekstop footer-------- */
@@ -184,34 +214,6 @@ h1 {
 
 }
 
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-    }
-
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
 
 @media only screen and (max-width: 910px) {
     #dekstop-footer {
@@ -396,34 +398,7 @@ h1 {
 
 
 /*---------- jacket-store-------*/
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-    }
 
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
 
 .bread-crumbs {
     display: flex;
@@ -445,7 +420,7 @@ h1 {
     }
 }
 
-h1 {
+.jacket-store {
     font-size: clamp(14px, 1vw+1rem, 30px);
     font-family: 'inter', sans-serif;
     font-style: bold;
@@ -453,6 +428,7 @@ h1 {
     margin-top: 5rem;
 
 }
+
 
 .product-card {
     display: flex;
@@ -498,15 +474,36 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 5rem;
     margin-bottom: 7rem;
+
 }
+
+@media (max-width:1190px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:790px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
 
 /* --------about-us-page---------- */
 
 .body-centered {
+
     >h1 {
         border-bottom: 1px solid black;
-        max-width: 20%;
-        margin-bottom: 0;
+        max-width: 200px;
+        margin-bottom: 2rem;
+
     }
 }
 
@@ -522,6 +519,7 @@ h1 {
         width: 100%;
         justify-content: space-between;
         margin-bottom: 4rem;
+        gap: 3rem;
 
         >img {
             width: 100%;
@@ -533,12 +531,20 @@ h1 {
         >.top-info {
             margin: 0.5rem;
 
+            >p {
+                font-size: clamp(0.85rem, 1vw + 0.4rem, 1.5rem);
+            }
+
 
         }
 
         >.bottom-info {
-            margin: 3rem;
+            >h1 {
+                margin-top: 0;
+            }
         }
+
+
     }
 }
 
@@ -562,46 +568,34 @@ h1 {
 }
 
 /* ------------Contact-Us------------ */
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
+.contact-us {
+    width: 100%;
+
+    >hi {
+        margin-top: 0px;
+        width: 150px;
     }
 
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
+    >p {
+        max-width: 200px;
     }
-
 }
 
-.about-rainydays {
+
+
+.contact-rainyday {
     padding: 1rem;
     margin-bottom: 1rem;
     display: grid;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     text-align: left;
     align-items: left;
     margin-left: 6rem;
     margin-top: 4rem;
 
 }
+
 
 .contact-container {
     justify-content: left;
@@ -611,6 +605,7 @@ h1 {
     margin-bottom: 2rem;
     row-gap: 3rem;
     box-sizing: border-box;
+    width: 100%;
 
     .contact {
         display: flex;
@@ -628,10 +623,11 @@ h1 {
         }
 
         >input {
+            max-width: 300;
             border-radius: 4px;
             box-shadow: 5px 5px 10px grey;
             border: 0.5px solid grey;
-            padding: 5px 6px;
+            padding: 3px 2px;
 
         }
 
@@ -645,21 +641,40 @@ h1 {
 
 
     }
-
-
-
-
 }
+
 
 .big-image {
     background-color: #fff;
     background-image: url(../../assets/imgsrc/couple-yellow.png);
 
+    width: 100%;
     height: 130vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 5rem 0rem;
+}
+
+@media(max-width:500px) {
+    .contact-rainyday {
+        margin-left: 0px;
+        margin-left: 0px;
+        max-width: 250px;
+    }
+
+    .contact {
+        >input {
+            width: 265px;
+
+        }
+
+        >textarea {
+            width: 265px;
+        }
+    }
+
+
 }
 
 
@@ -672,34 +687,7 @@ h1 {
 
 
 /*------------success.html--------*/
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-    }
 
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
 
 .middle {
     display: flex;
@@ -751,34 +739,7 @@ h1 {
 }
 
 /*============product info.html===*/
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-    }
 
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
 
 
 .product-info {
@@ -794,12 +755,13 @@ h1 {
         max-width: 650px;
         align-self: left;
     }
-
-
-
+}
+.product-addcart{
+    width: 100%;
+   
 }
 
-.prod-divider {
+.product-divider {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -825,24 +787,20 @@ h1 {
         display: none;
     }
 }
-@media only screen and (max-width: 1060px){
-    .size-button {
-        display: column;
-        box-sizing: border-box;
-        box-shadow: 1px grey;
+
+@media only screen and (max-width: 1065px) {
+    .product-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     
-        >label {
-            border: 1px solid #000;
-            padding: 0.6rem 1rem;
-            margin-right: 1rem;
-            background-color: #F2F9F8;
-            box-shadow: 2px 3px 8px grey;
-        }
-    
-        >input {
-            display: none;
-        }
     }
+    .product-addcart{
+        max-width: 190px;
+        
+    }
+    
+    
 }
 
 .black-button {
@@ -907,34 +865,7 @@ h1 {
 
 
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-    }
 
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
 
 .cart-top {
     display: flex;
