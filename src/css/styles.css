@@ -154,13 +154,13 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 4rem 0rem;
+    padding: 3rem 0rem;
     width: 100%;
 
 
     >img {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
 
     }
 
@@ -942,6 +942,7 @@ h1 {
         margin-bottom: 0.5rem;
         padding: 0.3rem 0.4rem;
     }
+    
 }
 
 .cart-bottom {
