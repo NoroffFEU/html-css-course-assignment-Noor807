@@ -896,7 +896,7 @@ h1 {
     max-width: 500px;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem 0px;
+    padding: 2rem 0px;
     gap: 4rem;
 
 }
@@ -1009,7 +1009,8 @@ h1 {
     }
 
     .cart-alignment {
-        margin-left: 2rem;
+        margin-left: 1rem;
+       
     }
 
 
