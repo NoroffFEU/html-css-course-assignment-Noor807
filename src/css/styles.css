@@ -406,6 +406,7 @@ h1 {
     gap: 1rem;
     padding: 1rem 0rem;
     margin-top: 2rem;
+    width: 100%;
     max-width: 400px;
 
 
@@ -419,6 +420,16 @@ h1 {
 
     }
 }
+@media only screen and (max-width: 500px) {
+    .bread-crumbs{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    
+}
+
+
 
 .jacket-store {
     font-size: clamp(14px, 1vw+1rem, 30px);
@@ -816,7 +827,7 @@ h1 {
         margin: auto;
         width: 100%;
         align-items: left;
-        
+
     }
 
     >.resistance {
@@ -831,6 +842,7 @@ h1 {
     justify-content: flex-start;
 
     width: 100%;
+
     >h1 {
         margin: 0;
     }
@@ -851,6 +863,7 @@ h1 {
 
     }
 }
+
 @media only screen and (max-width: 1065px) {
     .product-info {
         display: flex;
@@ -863,28 +876,29 @@ h1 {
         display: column;
 
     }
+
     .right-side-product {
         display: flex;
         align-items: center;
         flex-direction: column;
 
     }
-    
+
 
 
 }
 
 
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
-.cart-alignment{
+.cart-alignment {
     display: flex;
     width: 100%;
     max-width: 500px;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 5rem 0px;
+    justify-content: center;
+    padding: 3rem 0px;
     gap: 4rem;
-   
+
 }
 
 
@@ -892,7 +906,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
     max-width: 400px;
 
@@ -901,7 +915,7 @@ h1 {
 .order-review {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
     text-align: end;
@@ -910,20 +924,29 @@ h1 {
         width: 140px;
         text-align: left;
     }
+    >img{
+        width: 100%;
+        max-width: 250px;
+    }
 }
+.cart-summary{
+    >h2{
+        max-width: fit-content;
+    }
+}
+
 
 .price-tag {
     display: flex;
-    align-items: center;
+    align-items:center;
 
     >b {
-        width: 65px;
+
         text-align: center;
         margin-right: 10px;
     }
 
     >p {
-        width: 140px;
         text-align: left;
     }
 }
@@ -952,7 +975,7 @@ h1 {
         margin-bottom: 0.5rem;
         padding: 0.3rem 0.4rem;
     }
-    
+
 }
 
 .cart-bottom {
@@ -978,4 +1001,16 @@ h1 {
 
     }
 }
-@media (max-width)
+
+@media only screen and (max-width: 610px) {
+    .form-style {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .cart-alignment {
+        margin-left: 2rem;
+    }
+
+
+}
