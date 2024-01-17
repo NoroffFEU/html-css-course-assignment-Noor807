@@ -937,7 +937,7 @@ h1 {
 /*;;;;;;;;;;;;;;;My cart::::::::::::::::*/
 .cart-alignment {
     display: flex;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     flex-direction: column;
     justify-content: center;
