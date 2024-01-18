@@ -12,12 +12,20 @@
 <body class="body">
   <header>
     <div class="header-logo">
-      <img src="assets/imgsrc/RainyDaysLogo.png" alt="Rainy Days Logo">
+      <img src="./assets/imgsrc/RainyDaysLogo.png" alt="Rainy Days Logo">
     </div>
 
     <div class="mobile-navbar">
       <div class="hamburger">
-        <a href="#hamburger"><i class="fa-solid fa-bars"></i></a>
+        <label for="hamburger"><i class="fa-solid fa-bars"></i>
+          <input id="hamburger" name="hamburger" type="checkbox" hidden>
+          <div class="hidden-ham">
+            <a href="./index.html">Home</a>
+            <a href="./Jackets.html">Store</a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html">Contact</a>
+          </div>
+        </label>
       </div>
 
       <div class="search-cart">
@@ -30,10 +38,10 @@
 
     <div class="Dekstop-navbar">
       <div>
-        <a href="/index.html">Home</a>
-        <a href="News">News</a>
-        <a href="Men">Men</a>
-        <a href="Women">Women</a>
+        <a href="./index.html">Home</a>
+        <a href="./Jackets.html">Store</a>
+        <a href="./About.html">About</a>
+        <a href="./Contact.html">Contact</a>
       </div>
 
       <div class="search-and-cart">
@@ -81,11 +89,11 @@
         <h1>Contact form:</h1>
         <form action="form" class="contact">
           <input type="text" name="name." placeholder="name.">
-          <label form="labels"></label>
+          <label form="email"></label>
           <input type="email" name="email." placeholder="email.">
           <label for="message."></label>
           <textarea name="message." id="message." placeholder="message." cols="30" rows="10"></textarea>
-          <label for="message."></label>
+          <label for="Submit"></label>
           <input type="Submit" class="submit-button">
         </form>
       </div>
@@ -93,15 +101,15 @@
   </main>
 
   <footer id="dekstop-footer">
-    <img src="assets/imgsrc/RainyDaysLogo.png" alt="RainyDays_Logo">
+    <img src="./assets/imgsrc/RainyDaysLogo.png" alt="RainyDays_Logo">
 
     <div class="footer-links">
       <div class="footer-col">
 
-        <a href="/About.html">About us</a>
+        <a href="./About.html">About us</a>
         <a href="#">Privacy policy</a>
         <a href="#">Help</a>
-        <a href="/Contact.html">Contact us</a>
+        <a href="./Contact.html">Contact us</a>
       </div>
 
       <div class="footer-col">

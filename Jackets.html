@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainy Days Jackets</title>
+  <title>RainyDays Jacket Store</title>
   <link rel="stylesheet" href="src/css/styles.css">
   <script src="https://kit.fontawesome.com/477db4c9cb.js" crossorigin="anonymous"></script>
 </head>
@@ -12,12 +12,20 @@
 <body class="centered">
   <header>
     <div class="header-logo">
-      <img src="assets/imgsrc/RainyDaysLogo.png" alt="Rainy Days Logo">
+      <img src="./assets/imgsrc/RainyDaysLogo.png" alt="Rainy Days Logo">
     </div>
 
     <div class="mobile-navbar">
       <div class="hamburger">
-        <a href="#hamburger"><i class="fa-solid fa-bars"></i></a>
+        <label for="hamburger"><i class="fa-solid fa-bars"></i>
+          <input id="hamburger" name="hamburger" type="checkbox" hidden>
+          <div class="hidden-ham">
+            <a href="./index.html">Home</a>
+            <a href="./Jackets.html">Store</a>
+            <a href="./About.html">About</a>
+            <a href="./Contact.html">Contact</a>
+          </div>
+        </label>
       </div>
 
       <div class="search-cart">
@@ -30,10 +38,10 @@
 
     <div class="Dekstop-navbar">
       <div>
-        <a href="/index.html">Home</a>
-        <a href="News">News</a>
-        <a href="/Jackets.html">Men</a>
-        <a href="Women">Women</a>
+        <a href="./index.html">Home</a>
+        <a href="./Jackets.html">Store</a>
+        <a href="./About.html">About</a>
+        <a href="./Contact.html">Contact</a>
       </div>
 
       <div class="search-and-cart">
@@ -45,8 +53,8 @@
   </header>
   <main class="body-centered">
     <div class="bread-crumbs">
-      <a href="/index.html">Home ></a>
-      <a href="/Jackets.html">Shop</a>
+      <a href="./index.html">Home ></a>
+      <a href="./Jackets.html">Shop</a>
     </div>
 
     <section>
@@ -55,28 +63,28 @@
       <div class="grid-container">
 
         <div class="product-card">
-          <a href="Product-info.html"><img src="assets/imgsrc/softshell-jacket.jpg" alt="Red and black jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/softshell-jacket.jpg" alt="Red and black jacket"></a>
           <h2>Softshell jacket</h2>
           <p>Water and wind resistance fabric good for hiking </p>
           <h3>$ 160</h3>
         </div>
 
         <div class="product-card">
-           <a href="Product-info.html"><img src="assets/imgsrc/Training-Jacket.jpg" alt="Dark grey jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/Training-Jacket.jpg" alt="Dark grey jacket"></a>
           <h2>Training jacket</h2>
           <p>A light weight jacket ,waterproof wind resistant </p>
           <h3>$ 150</h3>
         </div>
 
         <div class="product-card">
-          <a href="Product-info.html"><img src="assets/imgsrc/parka-jacket.png" alt="Dark and light grey jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/parka-jacket.png" alt="Dark and light grey jacket"></a>
           <h2>Parka jacket</h2>
           <p>Stylish inside fleece warm waterproof windproof </p>
           <h3>$ 230</h3>
         </div>
 
         <div class="product-card">
-          <a href="Product-info.html"><img src="assets/imgsrc/Mountain-hardwear.jpg" alt="Orange grey jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/Mountain-hardwear.jpg" alt="Orange grey jacket"></a>
           <h2>Mountain hardwear</h2>
           <p>Great storm protection, above average breathability,
             no clamming feeling, packs tightly into reversible stuff pocket,</p>
@@ -84,21 +92,21 @@
         </div>
 
         <div class="product-card">
-          <a href="Product-info.html"><img src="assets/imgsrc/Men's-casual.png" alt="Black and white jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/Men's-casual.png" alt="Black and white jacket"></a>
           <h2>Men s casual</h2>
           <p>A good comfortable and stylish jacket outdoor</p>
           <h3>$ 170</h3>
         </div>
 
         <div class="product-card">
-          <a href="Product-info.html"><img src="assets/imgsrc/men's-hicking.png" alt="Light grey jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/men's-hicking.png" alt="Light grey jacket"></a>
           <h2>Men's hiking</h2>
           <p>High collar and culf sleeves best for wind</p>
           <h3>$ 180</h3>
         </div>
 
         <div class="product-card ">
-          <a href="Product-info.html"><img src="assets/imgsrc/Green-oliva.jpg" alt="Olive green jacket"></a>
+          <a href="./Product-info.html"><img src="./assets/imgsrc/Green-oliva.jpg" alt="Olive green jacket"></a>
           <h2>Oliva Green</h2>
           <p>Stylish warm indoor jacket cozy comfortable</p>
           <h3>$ 175</h3>
@@ -113,7 +121,7 @@
     <div class="footer-links">
       <div class="footer-col">
 
-        <a href="/About.html">About us</a>
+        <a href="./About.html">About us</a>
         <a href="#">Privacy policy</a>
         <a href="#">Help</a>
         <a href="./Contact.html">Contact us</a>
@@ -129,9 +137,9 @@
     <div class="socials-links">
       <p> Follow us</p>
       <div>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-x-twitter"></i>
+       <i class="fa-brands fa-square-facebook"></i>
       </div>
     </div>
   </footer>
