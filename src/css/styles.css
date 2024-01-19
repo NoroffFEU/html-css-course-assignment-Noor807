@@ -126,9 +126,10 @@ header {
             margin-top: 3rem;
 
         }
-        >a:hover{
+
+        >a:hover {
             color: black;
-            background-color:lightgrey;
+            background-color: lightgrey;
         }
 
     }
@@ -712,6 +713,9 @@ h1 {
             color: #fff;
             padding: 0.5rem 1rem;
             text-decoration: none;
+            font-family: 'inter', sans-serif;
+            font-style: bold;
+            font-size: 20px;
 
         }
 
@@ -773,16 +777,20 @@ h1 {
     width: 100%;
     gap: 10px;
 
-    a {
+    >a {
         background-color: black;
         color: #fff;
         padding: 0.5rem 1rem;
         text-decoration: none;
         margin-top: 2rem;
-        margin-bottom: 7px;
+        margin-bottom: 7rem;
+
+
     }
 
 }
+
+
 
 .checkmark {
     width: 100%;
