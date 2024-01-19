@@ -29,7 +29,7 @@ body {
 
 
 .body-centered {
-    width: 80%;
+    width: 90%;
     padding-bottom: 4rem;
 
 }
@@ -100,24 +100,39 @@ header {
     top: 185px;
     left: 0;
     width: 100%;
-    height: 70px;
-    background-color:lightseagreen;
+    height: 60px;
+    background-color: lightseagreen;
 
-    >a {
-        width: 100%;
-        max-width: 80px;
-        background-color: #fff;
-        color: #000;
-        text-decoration: none;
-        padding: 0.3rem 0.5rem;
-        text-align: center;
-        border: #000 1px solid;
-       
-       
-       
-        
+
+    .ham-child {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0 auto;
+
+        >a {
+            width: 100%;
+            max-width: 75px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 0.3rem 0.5rem;
+            text-align: center;
+            border: #000 1px solid;
+            margin-top: 3rem;
+
+        }
+        >a:hover{
+            color: black;
+            background-color:lightgrey;
+        }
 
     }
+
 }
 
 
@@ -351,7 +366,7 @@ h1 {
         height: 100%;
         margin-top: 4rem;
     }
-    
+
 }
 
 
@@ -472,7 +487,8 @@ h1 {
 @media only screen and (max-width: 500px) {
     .bread-crumbs {
         width: 100%;
-        max-width: 200px;
+
+
     }
 
 
@@ -795,7 +811,7 @@ h1 {
 
 .Hiking-couple {
     width: 100%;
-    max-width: 1000;
+    max-width: 90%;
 }
 
 /*============product info.html===*/
