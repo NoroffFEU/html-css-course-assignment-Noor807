@@ -648,7 +648,7 @@ h1 {
 .contact-us {
     width: 100%;
 
-    >hi {
+    >h1 {
         margin-top: 0px;
         width: 150px;
     }
@@ -779,8 +779,8 @@ h1 {
         margin-top: 2rem;
         margin-bottom: 7rem;
 
-
     }
+
 
 }
 
