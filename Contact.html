@@ -90,14 +90,20 @@
 
       <div class="contact-container">
         <h1>Contact form:</h1>
-        <form action=""class="contact">
-          <label for="name">name:</label>
-          <input id="name" type="name" name="name." >
-          <label for="email">email:</label>
-          <input id="email" type="email" name="email." >
+        <form class="contact">
+          <label for="Firstname"> First name</label>
+          <input type="text" name="Firstname" id="Firstname">
+          <label for="Email"> Email</label>
+          <input type="email" name="Email" id="Email">
           <label for="message">message</label>
-          <textarea id="message" name="message" placeholder="your message" required cols="30" rows="10"></textarea>
-          <input type="submit" name="submit" onclick="alert('Thank you for contact')" value=submit
+          <textarea id="message" name="message" placeholder="your message" 
+          required 
+          minlength="1" 
+          maxlength="1000">
+        </textarea>
+
+          <input type="submit" name="submit" 
+          onclick="alert('Thank you for contact')" value=submit
             class="submit-button">
         </form>
       </div>
