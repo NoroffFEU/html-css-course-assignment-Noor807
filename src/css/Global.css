@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 p {
     font-family: 'inter', sans-serif;
     font-size: clamp(10px, 1vw+1rem, 16px);
@@ -17,13 +18,13 @@ h1 {
     font-family: 'inter', sans-serif;
     font-size: clamp(16px, 1vw+1rem, 24px);
     color: black;
-} 
+}
 
 h2 {
     font-family: 'inter', sans-serif;
     font-weight: 700;
     font-size: clamp(14px, 1vw + 1rem, 20px);
-} 
+}
 
 a {
     font-family: 'inter', sans-serif;
@@ -35,6 +36,116 @@ a {
 
 }
 
+nav {
+    width: 100%;
+    height: 80px;
+    background: #022D36;
+}
+
+label.logo {
+    font-size: 35px;
+    color: white;
+    margin: 0 70px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+
+}
+
+nav ul li a .active,
+a:hover {
+    background: #52b2bf;
+
+}
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+@media(max-width:400px) {
+    label .logo {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+}
+
+@media(max-width:895px) {
+
+    #checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 50vh;
+        background: #022D36;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        transition: .5s;
+        line-height: 40px;
+        margin: 15px;
+
+
+    }
+
+}
+
+#dekstop-footer {
+    background-image:#022D36 ;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0rem;
+    width: 100%;
+
+
+    >img {
+        width: 100%;
+        max-width: 250px;
+
+    }
+
+
+}
+
+
 .footer-col {
     display: flex;
     flex-direction: column;
@@ -44,10 +155,8 @@ a {
         font-size: clamp(14px, 0.5vw + 1rem, 24px);
         margin: 0.5rem 0rem;
         text-decoration: none;
-        color: black;
-
+        color: white;
     }
-
 
 }
 
@@ -74,13 +183,14 @@ a {
 
         >i {
             margin: 5px;
-            color: black;
+            color: white;
             font-size: 40px;
         }
 
     }
 
 }
+
 @media only screen and (max-width: 910px) {
     #dekstop-footer {
         display: flex;

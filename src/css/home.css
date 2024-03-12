@@ -9,13 +9,14 @@ nav{
     height: 80px;
     background:#022D36 ;
 }
+
 label.logo{
     font-size: 35px;
     color: white;
-    margin: 0 100px;
+    margin: 0 70px;
     line-height: 80px;
-
 }
+
 nav ul{
     float: right;
     list-style-type: none;
@@ -50,15 +51,26 @@ nav ul li a .active,a:hover{
 #check{
     display: none;
 }
-#check:checked
+#check:checked~ul{
+    left: 0;
+}
+
+@media(max-width:400px){
+    label .logo{
+        font-size:20px ;
+        margin: 0 20px;
+    }
+
+}
 
 @media(max-width:895px){
+    
     #checkbtn{
         display: block;
     }
     nav ul{
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background: #022D36;
         position: fixed;
         top: 80px;
@@ -67,6 +79,12 @@ nav ul li a .active,a:hover{
     nav ul li{
         display: block;
         text-align: center;
+        transition: .5s;
+        line-height: 40px;
+        margin: 15px;
+
         
     }
+
 }
+
