@@ -21,6 +21,10 @@ nav {
     height: 10%;
     background: #191970;
 }
+nav img{
+    width: 100%;
+    max-width: 40px;
+}
 
 .logo-box {
     display: flex;
