@@ -94,8 +94,8 @@ a:hover {
 
 
 @media (max-width: 1104px) {
-    .logo {
-        margin: 0 50px;
+    .header-logo {
+        margin: 0 20px;
     }
 
 
