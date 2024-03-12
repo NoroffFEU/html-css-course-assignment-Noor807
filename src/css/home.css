@@ -97,7 +97,7 @@ a:hover {
     .header-logo {
         margin: 0 20px;
         width: 30%;
-        height: 20%;
+        height: 30%;
     }
 
 
@@ -125,24 +125,3 @@ a:hover {
 
 } 
 
-@media(max-width:550px){
-    .logo {
-        font-size: 16px;
-        margin: 0 20px;
-    }
-
-}
-
-@media(max-width:450px) {
-    .logo {
-        font-size: 16px;
-        margin: 0 20px;
-    }
-    .logo-box{
-        width: 100%;
-        max-width: 100%;
-       
-    } 
-
-
-}
