@@ -29,13 +29,7 @@ nav img{
     width: 50%;
 }
 
-.logo {
-    font-size: 30px;
-    color: yellow;
-    margin: 0 20px;
-    line-height: 80px;
-    width: 100%;
-}
+
 
 nav ul {
     float: right;
@@ -56,6 +50,9 @@ nav ul li a {
     text-transform: capitalize;
     padding: 8px 10px;
 
+}
+.search-cart{
+    display: flex;
 }
 
 nav ul li a .active,
