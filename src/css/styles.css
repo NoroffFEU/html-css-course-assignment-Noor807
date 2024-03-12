@@ -37,43 +37,6 @@ header {
 /* css all styles */
 
 
-@media only screen and (max-width: 600px) {
-    .Dekstop-navbar {
-        display: none;
-        overflow: hidden;
-    }
-
-    .header-logo {
-        >img {
-            width: auto;
-            height: 75px;
-        }
-    }
-
-    .mobile-navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 2rem;
-
-        >.hamburger {
-            >a i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-            }
-        }
-
-        >.search-cart {
-            >i {
-                font-size: clamp(0.85rem, 1vw + 1rem, 1.5rem);
-                margin-right: 1rem;
-            }
-        }
-
-    }
-
-}
-
 
 
 /* ==========  HEADER    =========== */
