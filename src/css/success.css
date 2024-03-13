@@ -1,5 +1,12 @@
 @import url(./Global.css);
 
+.body-centered {
+    width: 90%;
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+
+}
+
 .middle {
     display: flex;
     flex-direction: column;
@@ -9,7 +16,7 @@
     gap: 10px;
 
     >a {
-        background-color: black;
+        background-color:#022D36;
         color: #fff;
         padding: 0.5rem 1rem;
         text-decoration: none;
@@ -50,5 +57,5 @@
 
 .Hiking-couple {
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
 }
