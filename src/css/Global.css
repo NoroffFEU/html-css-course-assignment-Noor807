@@ -108,6 +108,7 @@ a:hover {
         position: fixed;
         top: 80px;
         left: -120%;
+        margin: 0;
     }
 
     nav ul li {
