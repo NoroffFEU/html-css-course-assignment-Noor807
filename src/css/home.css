@@ -89,4 +89,15 @@ nav ul li a .active,a:hover{
     }
 
 }
+#body-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+
+    >.main-img {
+        width: 100%;
+    }
+}
 

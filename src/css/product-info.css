@@ -1,0 +1,146 @@
+@import url(./Global.css);
+/*============product info.html===*/
+
+.body-centered {
+    width: 90%;
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+
+}
+
+
+
+.product-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0.5px;
+    width: 100%;
+    gap: 4rem;
+
+    >img {
+        width: 50%;
+        max-width: 650px;
+        align-self: left;
+    }
+}
+
+.product-addcart {
+    width: 100%;
+
+}
+
+.product-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.size-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 1px grey;
+    gap: 1rem;
+
+
+    >label {
+        border: 1px solid #000;
+        padding: 0.6rem 1rem;
+        background-color: #F2F9F8;
+        box-shadow: 2px 3px 8px grey;
+    }
+
+    >input {
+        display: none;
+    }
+}
+
+
+
+.black-button {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-top: 6px;
+    padding: 0.5rem 2rem;
+    max-width: 100px;
+
+}
+
+
+.right-side-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    >.jacket-info {
+        margin: auto;
+        width: 100%;
+        align-items: left;
+
+    }
+
+    >.resistance {
+        width: 100%;
+    }
+}
+
+.product-addcart {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    >h1 {
+        margin: 0;
+    }
+}
+
+.small-icons {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    >i {
+        font-size: clamp(18px, 1vw + 1rem, 24px);
+    }
+
+    >p {
+        font-size: clamp(14px, 1vw + 1rem, 16px);
+
+    }
+}
+
+@media only screen and (max-width: 1065px) {
+    .product-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .size-button {
+        display: column;
+
+    }
+
+    .right-side-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+
+}
