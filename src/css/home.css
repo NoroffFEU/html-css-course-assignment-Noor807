@@ -120,9 +120,9 @@ a:hover {
 
 .collection {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 4rem;
-    gap: 7rem;
+    gap: 6rem;
     width: 100%;
     max-width: 1600px;
     margin-top: 5rem;
@@ -131,7 +131,7 @@ a:hover {
 
 .men-collection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1rem 2rem;
     background: #52b2bf;
     border: 1px solid grey;
@@ -140,8 +140,9 @@ a:hover {
 }
 .men-collection img{
     width: 100%;
-    max-width: 700px;
-    height: 700px;
+    max-width: 600px;
+    height: 500px;
+    
 }
 .content{
     display: flex;
@@ -162,6 +163,18 @@ a:hover {
     width: 150px;
     margin-bottom: 2rem;
 
+}
+
+.black-week{
+    width: 100%;
+    max-width: 2300px;
+    align-items: center;
+    margin: 5rem 5rem;
+}
+
+.product-heading{
+    margin: 4rem 5rem;
+    border-style: 1px solid darkgrey;
 }
 .best-seller {
     display: flex;
