@@ -164,9 +164,9 @@ a:hover {
 
 }
 .best-seller {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
     margin-bottom: 7rem;
 
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 @media (max-width:1190px) {
     .best-seller{
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(2, 1fr);
     }
 
