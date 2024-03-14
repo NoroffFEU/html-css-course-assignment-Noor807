@@ -111,7 +111,7 @@ a:hover {
 }
 .header-img{
     width: 100%;
-    max-width: 3000px;
+    max-width: 2000px;
 }
 .explore{
     margin-top: 4rem;
@@ -125,6 +125,7 @@ a:hover {
     gap: 7rem;
     width: 100%;
     max-width: 1600px;
+    margin-top: 5rem;
 
 }
 
@@ -139,8 +140,16 @@ a:hover {
 }
 .men-collection img{
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
+    height: 700px;
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 2rem;
+} 
+
 
 .shop-now {
     background-color: #022D36;
@@ -151,5 +160,67 @@ a:hover {
     font-style: bold;
     font-size: 20px;
     width: 150px;
+    margin-bottom: 2rem;
+
+}
+.best-seller {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    margin-bottom: 7rem;
+
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px grey;
+    background-color: lightgray;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    >a img {
+        width: 100%;
+    }
+
+    >h2 {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+    }
+
+    >p {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+
+    }
+
+    >h3 {
+        font-size: clamp(14px, 1vw+1rem, 30px);
+        font-family: 'inter', sans-serif;
+        font-style: bold;
+        margin: 0;
+    }
+}
+@media (max-width:1190px) {
+    .best-seller{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:790px) {
+    .best-seller{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
