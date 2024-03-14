@@ -107,10 +107,11 @@ a:hover {
     width: 80%;
     margin-left: 4rem;
 
-    >.main-img {
-        width: 100%;
-        max-width: 2500px;
-    }
+    
+}
+.header-img{
+    width: 100%;
+    max-width: 3000px;
 }
 .explore{
     margin-top: 4rem;
