@@ -99,6 +99,8 @@ nav ul li a .active,a:hover{
 
     >.main-img {
         width: 100%;
+        max-width: 2000px;
     }
 }
+
 
