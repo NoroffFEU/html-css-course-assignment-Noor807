@@ -1,9 +1,3 @@
-var mypet = "sheep"
 
-if ( mypet =sheep){
-   console.log( my pet is sheep ) 
-   else{
-    console.log( my pet is not sheep)
-   }
 
-}
+var list = 
