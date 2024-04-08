@@ -13,7 +13,7 @@ async function getJackets() {
   const result = await req.json()
 
   for (let i = 0; i < result.length; i++){
-     jacketsContainer.innerHTML += `<a class="jacket-item" href="/html/product.html?jacketid=${result[i].id}">
+     jacketsContainer.innerHTML += `<a class="jacket-item" href="/html/product.Html?jacketid=${result[i].id}">
      <img src="${result[i].image}" alt="${result[i].title}"/>
       <h3> ${result[i].title}</h3>
       <p>${result[i].gender} </p>

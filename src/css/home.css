@@ -183,6 +183,22 @@ a:hover {
     margin-bottom: 7rem;
 
 }
+.jacket-item{
+    display: flex;
+    flex-direction: column;
+    text-decoration: 1px solid grey;
+    gap: 6px;
+    margin-top:3rem ;
+    margin-bottom: 3rem;
+
+}
+img{ 
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid grey;
+    margin-top: 2rem;
+    
+}
 
 .product-card {
     display: flex;
