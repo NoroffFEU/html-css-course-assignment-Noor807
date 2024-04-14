@@ -7,9 +7,30 @@
     margin-left: 2rem;
 
 }
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin: 4rem  0;
+
+}
+.image-box{
+    gap: 3rem;
+}
+.image-box img{
+    width: 100%;
+    max-width: 400px;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 
-.jacket-store {
+/* .jacket-store {
     font-size: clamp(14px, 1vw+1rem, 30px);
     font-family: 'inter', sans-serif;
     font-style: bold;
@@ -34,8 +55,9 @@
     >a img {
         width: 100%;
     }
+} */
 
-    >h2 {
+/* >h2 {
         font-size: clamp(14px, 1vw+1rem, 30px);
         font-family: 'inter', sans-serif;
         font-style: bold;
@@ -54,9 +76,9 @@
         font-size: clamp(14px, 1vw+1rem, 30px);
         font-family: 'inter', sans-serif;
         font-style: bold;
-        margin: 0;
-    }
-}
+        margin: 0; */
+
+
 
 .grid-container {
     display: grid;
@@ -81,4 +103,3 @@
     }
 
 }
-

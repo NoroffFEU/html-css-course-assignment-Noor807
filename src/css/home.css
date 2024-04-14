@@ -43,7 +43,7 @@ nav ul li a {
 
 nav ul li a .active,
 a:hover {
-    background: #52b2bf;
+    background: lightseagreen;
 
 }
 
@@ -99,16 +99,7 @@ a:hover {
 
 }
 
-#body-index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-left:3rem;
 
-    
-}
 .header-img{
     width: 100%;
     max-width: 2000px;
@@ -117,76 +108,33 @@ a:hover {
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
-
-.collection {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-    gap: 6rem;
-    width: 100%;
-    max-width: 1600px;
-    margin-top: 5rem;
-
+.explore-heading{
+    align-content: flex-start;
+    margin: 3rem 4rem;
+   
 }
-
-.men-collection {
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 2rem;
-    background: #52b2bf;
-    border: 1px solid grey;
+.explore-heading p{
+    margin-left: 3rem;
     align-items: center;
     justify-content: center;
 }
-.men-collection img{
-    width: 100%;
-    max-width: 600px;
-   
-    
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 1rem 2rem;
-} 
 
 
-.shop-now {
-    background-color: #022D36;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    font-family: 'inter', sans-serif;
-    font-style: bold;
-    font-size: 20px;
-    width: 150px;
-    margin-bottom: 2rem;
-
+.jackets{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 3rem 4rem;
+   gap: 3rem;
 }
 
-.black-week{
-    width: 100%;
-    max-width: 2700px;
-    align-items: center;
-    margin: 5rem 5rem;
-}
 
-.product-heading{
-    margin: 4rem 5rem;
-    border-style: 1px solid darkgrey;
-}
-.best-seller {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    margin-bottom: 7rem;
-
-}
 .jacket-item{
     display: flex;
     flex-direction: column;
     text-decoration: 1px solid grey;
+    width: 100%;
+    max-width: 600px;
     gap: 6px;
     margin-top:3rem ;
     margin-bottom: 3rem;
@@ -195,12 +143,12 @@ a:hover {
 img{ 
     width: 100%;
     max-width: 400px;
-    border: 1px solid grey;
-    margin-top: 2rem;
+  
+   
     
 }
 
-.product-card {
+.jacket-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,32 +160,70 @@ img{
     padding: 0.5rem;
     gap: 1rem;
 
-    >a img {
-        width: 100%;
-    }
-
-    >h2 {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0;
-    }
-
-    >p {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0;
-
-    }
-
-    >h3 {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0;
-    }
 }
+
+.black-week{
+    width: 100%;
+    max-width: 1700px;
+   
+
+
+}
+.seller-heading{
+    margin: 3rem 4rem;
+    text-decoration: 1px solid black;
+}
+
+.men-collection{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    max-width: 900px;
+    margin-left: 4rem;
+    border:i px solid black ;
+    background: #52b2bf;
+    height: 300px;
+
+    
+
+}
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+   
+    
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+
+
+}
+.shop-now {
+    background-color: #022D36;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    max-width: 150px;
+
+}
+
+
+
+
 @media (max-width:1190px) {
     .best-seller{
         display: flex;
