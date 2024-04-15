@@ -15,16 +15,20 @@ async function getJackets() {
   for (let i = 0; i < result.length; i++){
      jacketsContainer.innerHTML += `<a class="jacket-item" href="./product.html?jacketid=${result[i].id}">
      
+     
      <img src="${result[i].image}" alt="${result[i].title}"/>
       <h3> ${result[i].title}</h3>
+      <p>${result[i].baseColor} </p>
       <p>${result[i].gender} </p>
       <p> ${result[i].sizes} </p>
-      <p> ${result[i].price} </p>
+      <p>$ ${result[i].price} </p>
+      
       
      
      
                          
                        </a>` }
+                      
  
  console.log(result)
 } 

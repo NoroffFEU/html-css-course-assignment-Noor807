@@ -30,11 +30,13 @@ async function getJacketDetail() {
     
    </div>
     <div class="info-box">
-      <h2> ${result.data.title}</h2>
-      <p>${result.data.description} </p>
-      <p>${result.data.gender} </p>
-      <p> ${result.data.sizes} </p>
-      <p> ${result.data.price} </p>
+      <h2>Title:  ${result.data.title}</h2>
+      <p>Description:${result.data.description} </p>
+      <p>Gender:  ${result.data.gender} </p>
+      <p>Sizes:   ${result.data.sizes} </p>
+      <p>Price:   $${result.data.price} </p>
+      <p>Discount:$${result.data.discountedPrice} </p>
+      <a class="add-to-cart" href="../html/my-cart.html">Add to Cart</a>
     </div>   
 
             

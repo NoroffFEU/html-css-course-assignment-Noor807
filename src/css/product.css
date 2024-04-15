@@ -29,6 +29,19 @@
     gap: 0.5rem;
 }
 
+.add-to-cart{
+    background-color:orange;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    max-width: 150px;
+
+}
+
+
 
 /* .jacket-store {
     font-size: clamp(14px, 1vw+1rem, 30px);
