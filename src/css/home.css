@@ -142,7 +142,7 @@ a:hover {
 } */
 img{ 
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
   
    
     
@@ -154,7 +154,7 @@ img{
     justify-content: center;
     align-items: flex-start;
     border: 1px grey;
-    background-color:lightgray;
+    background-color:#B3C0C2;
     width: 100%;
     max-width: 300px;
     padding: 0.5rem;
@@ -162,13 +162,13 @@ img{
 
 }
 
-.black-week{
+/* .black-week{
     width: 100%;
     max-width: 1700px;
    
 
 
-}
+} */
 .seller-heading{
     margin: 3rem 4rem;
     text-decoration: 1px solid black;
@@ -182,7 +182,7 @@ img{
     max-width: 900px;
     margin-left: 4rem;
     border:i px solid black ;
-    background: #52b2bf;
+    background: #4D6C72;
     height: 300px;
 
     

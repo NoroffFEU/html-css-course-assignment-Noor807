@@ -9,7 +9,7 @@ async function getFemaleJackets(){
 
     const result = await req.json()
 
-        console.log("male object" , result)
+        console.log("female object" , result)
 
         const femaleJackets = result.filter((jacket) => jacket.gender !== "Male")
 
