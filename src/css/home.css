@@ -154,7 +154,7 @@ img{
     justify-content: center;
     align-items: flex-start;
     border: 1px grey;
-    background-color:rgb(243, 217, 169);
+    background-color:lightgray;
     width: 100%;
     max-width: 300px;
     padding: 0.5rem;
