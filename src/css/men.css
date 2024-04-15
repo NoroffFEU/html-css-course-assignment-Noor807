@@ -1,1 +1,32 @@
 @import url(./Global.css);
+
+.jacket-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px grey;
+    background-color:rgb(243, 217, 169);
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
+
+}
+
+.male-jackets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 4rem;
+    gap: 3rem;
+ }
+
+ img{ 
+    width: 100%;
+    max-width: 400px;
+  
+   
+    
+}
+ 

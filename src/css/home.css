@@ -129,7 +129,7 @@ a:hover {
 }
 
 
-.jacket-item{
+/* .jacket-item{
     display: flex;
     flex-direction: column;
     text-decoration: 1px solid grey;
@@ -139,7 +139,7 @@ a:hover {
     margin-top:3rem ;
     margin-bottom: 3rem;
 
-}
+} */
 img{ 
     width: 100%;
     max-width: 400px;
