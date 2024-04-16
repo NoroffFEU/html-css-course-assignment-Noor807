@@ -27,7 +27,7 @@ async function getFemaleJackets(){
             
         </a>
          `
- console.log("filter on Female" , femaleJackets)
+ console.log("filter on male" , femaleJackets)
 
 }
 
