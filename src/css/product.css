@@ -7,37 +7,47 @@
     margin-left: 2rem;
 
 }
-.info{
+
+
+.parent-div{
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
+    margin: 3rem 3rem;
     align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    margin: 4rem  0;
+}
 
-}
-.image-box{
-    gap: 3rem;
-}
-.image-box img{
+.product-img{
     width: 100%;
     max-width: 400px;
-}
-.info-box{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+   
 }
 
-.add-to-cart{
+.child-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5 rem;
+    justify-content: center;
+
+}
+
+.jacket-detail{
+display: flex;
+flex-direction: column;
+
+
+}
+
+.button{
     background-color:orange;
     color: #fff;
     text-align: center;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0.5rem 2rem;
     max-width: 150px;
+   
 
 }
 
