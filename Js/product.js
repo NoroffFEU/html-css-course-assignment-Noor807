@@ -27,7 +27,7 @@ async function getJacketDetail() {
 
   console.log = (result)
   img.src = `${result.data.image.url}`
-img.alt = `${result.data.title}`
+  img.alt = `${result.data.title}`
   
   jacketsContainer.innerHTML += `<div class="parent-div">
     
