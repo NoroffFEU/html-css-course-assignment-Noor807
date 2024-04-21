@@ -3,7 +3,7 @@
 const baseURL = "https://v2.api.noroff.dev/rainy-days/" 
  
 const jacketsContainer = document.querySelector(".jacket-detail")
-
+let jacketDetail = []
 const img = document.querySelector(".product-img")
 
  const addCartButton =document.querySelector('.button')
@@ -24,7 +24,7 @@ async function getJacketDetail() {
   const req = await fetch(completejacketUrl)
  
   const result = await req.json()
-
+  jacketDetail = result
   console.log = (result)
   img.src = `${result.data.image.url}`
   img.alt = `${result.data.title}`
@@ -43,11 +43,30 @@ async function getJacketDetail() {
    </div>`
 }
 
+
+///add to cart
  
 getJacketDetail()
 
 addCartButton.addEventListener('click', addtocart)
+
 function addtocart(){
 
+  let quantity = 1
+
+  let jacketToAdd = {
+    image: jacketDetail.image.url,
+    title: jacketDetail.title,
+    price: jacketDetail.onSale ? jacketDetail .discountedPrice : jacketDetail.price,
+    quantity : quantity,
+
+  }
+
+  const isjacketInCart
+
+
+
 }
+
+
 
