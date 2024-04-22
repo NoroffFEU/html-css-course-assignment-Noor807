@@ -1,9 +1,9 @@
 
 
-const baseURL = "https://v2.api.noroff.dev/rainy-days/"
+const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
  
 const jacketsContainer = document.querySelector(".jacket-detail")
-let jacketDetail = []
+
 const img = document.querySelector(".product-img")
 
  const addCartButton =document.querySelector('.button')
@@ -13,7 +13,11 @@ const parameterString = window.location.search;
 const searchParameters = new URLSearchParams(parameterString);
  
 const jacketId = searchParameters.get("jacketid")
- 
+
+let localStorageList = getFromStorage('jacketitem')
+
+let jacketDetail = {}
+
 // console.log(jacketId)
 
 
@@ -26,18 +30,18 @@ async function getJacketDetail() {
   const result = await req.json()
   jacketDetail = result
   console.log = (result)
-  img.src = `${result.data.image.url}`
-  img.alt = `${result.data.title}`
+  img.src = `${result.image}`
+  img.alt = `${result.title}`
   
   jacketsContainer.innerHTML += `<div class="parent-div">
     
      <div class="child-div">
-      <h2>  ${result.data.title}</h2>
-      <p>Description:${result.data.description} </p>
-      <p>Gender:  ${result.data.gender} </p>
-      <p>Sizes:   ${result.data.sizes} </p>
-      <p>Price:   $${result.data.price} </p>
-      <p class="discount"> Discount:$${result.data.discountedPrice} </p>
+      <h2>  ${result.title}</h2>
+      <p>Description:${result.description} </p>
+      <p>Gender:  ${result.gender} </p>
+      <p>Sizes:   ${result.sizes} </p>
+      <p>Price:   $${result.price} </p>
+      <p class="discount"> Discount:$${result.discountedPrice} </p>
       
       </div>        
    </div>`
@@ -64,24 +68,49 @@ function addtocart(){
 
   }
 
-  const jacketInCart = itemInCart(localStorageList, jacketDetail.title)
+  ///const jacketInCart = itemInCart(localStorageList, jacketDetail.title)
+ 
+ const jacketInCart = isItemincart(localStorageList , jacketDetail.title)
 
-  if(jacketInCart){
-    localStorageList.push({...jacketToAdd, quantity:quantity+1})
-    localStorage.setItem("jacketitem" , JSON.stringify(localStorageList))
 
-  }
-  else {
-    const findIndex = localStorageList.findIndex(jacket => jacket.title === jacketDetail.title)
+  if(!jacketInCart)  {
 
-    localStorageList[findIndex].quantity++
+    localStorageList.push({...jacketToAdd})
 
-    localStorageList.setItem(jacketitem , JSON.stringify(localStorageList))
-  }
+    localStorage.setItem("jacketitem" , JSON.stringify(localStorageList) )
+    
+
+   }
+
+   else {
+    alert('Item is in cart')
+    
+ }
 
 
 
 };
+
+
+function isItemincart(arr , titleToCheck){
+
+  const found =  arr.some((jacket) => jacket.title === titleToCheck)
+
+  if(found) {
+    return true
+  }
+}
+
+
+function getFromStorage(key){
+  const savedInStorage = localStorage.getItem(key)
+
+  if(!savedInStorage) {
+    return []
+  }
+
+  return JSON.parse(savedInStorage)
+}
 
 
 
