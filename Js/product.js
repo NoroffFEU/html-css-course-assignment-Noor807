@@ -54,14 +54,14 @@ async function getJacketDetail() {
  
 getJacketDetail()
 
-addCartButton.addEventListener('click', addtocart)
+addCartButton.addEventListener('click', addToCart)
 
-function addtocart(){
+function addToCart(){
 
   let quantity = 1
 
   let jacketToAdd = {
-    image: jacketDetail.image.url,
+    image: jacketDetail.image,
     title: jacketDetail.title,
     price: jacketDetail.onSale ? jacketDetail .discountedPrice : jacketDetail.price,
     quantity : quantity,
@@ -70,14 +70,14 @@ function addtocart(){
 
   ///const jacketInCart = itemInCart(localStorageList, jacketDetail.title)
  
- const jacketInCart = isItemincart(localStorageList , jacketDetail.title)
+ const jacketInCart = isItemincart(localStorageList, jacketDetail.title)
 
 
   if(!jacketInCart)  {
 
-    localStorageList.push({...jacketToAdd})
+    localStorageList.push(jacketToAdd)
 
-    localStorage.setItem("jacketitem" , JSON.stringify(localStorageList) )
+    localStorage.setItem("jacketitem", JSON.stringify(localStorageList) )
     
 
    }
@@ -92,9 +92,9 @@ function addtocart(){
 };
 
 
-function isItemincart(arr , titleToCheck){
+function isItemincart(item, titleToCheck){
 
-  const found =  arr.some((jacket) => jacket.title === titleToCheck)
+  const found = item.some(jacket => jacket.title === titleToCheck);
 
   if(found) {
     return true
