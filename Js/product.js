@@ -37,14 +37,16 @@ async function getJacketDetail() {
       <p>Gender:  ${result.data.gender} </p>
       <p>Sizes:   ${result.data.sizes} </p>
       <p>Price:   $${result.data.price} </p>
-      <p>Discount:$${result.data.discountedPrice} </p>
+      <p class="discount"> Discount:$${result.data.discountedPrice} </p>
       
       </div>        
    </div>`
 }
 
 
-///add to cart
+
+
+///add to cart/////////////////////////
  
 getJacketDetail()
 
@@ -62,11 +64,24 @@ function addtocart(){
 
   }
 
-  const isjacketInCart
+  const jacketInCart = itemInCart(localStorageList, jacketDetail.title)
+
+  if(jacketInCart){
+    localStorageList.push({...jacketToAdd, quantity:quantity+1})
+    localStorage.setItem("jacketitem" , JSON.stringify(localStorageList))
+
+  }
+  else {
+    const findIndex = localStorageList.findIndex(jacket => jacket.title === jacketDetail.title)
+
+    localStorageList[findIndex].quantity++
+
+    localStorageList.setItem(jacketitem , JSON.stringify(localStorageList))
+  }
 
 
 
-}
+};
 
 
 

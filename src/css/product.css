@@ -32,10 +32,12 @@
 }
 
 .jacket-detail{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-
+}
+.discount{
+    color: red;
 }
 
 .button{

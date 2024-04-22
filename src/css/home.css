@@ -103,6 +103,7 @@ a:hover {
 .header-img{
     width: 100%;
     max-width: 2000px;
+    height: 800px;
 }
 .explore{
     margin-top: 4rem;
