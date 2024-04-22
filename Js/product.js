@@ -1,6 +1,6 @@
 
 
-const baseURL = "https://v2.api.noroff.dev/rainy-days/" 
+const baseURL = "https://v2.api.noroff.dev/rainy-days/"
  
 const jacketsContainer = document.querySelector(".jacket-detail")
 let jacketDetail = []
