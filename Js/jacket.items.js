@@ -1,22 +1,35 @@
+ 
+ let jackets = getFromStorage('jacketitem')
+ const cartItems = document.querySelector('.local-storage')
 
-for(let i = 0; i < localStorageList.length; i++){
+
+ export function itemCartForCart(jackets){
+    cartItems.innerHTML = ''
+    if (jackets.length === 0 ){
+        return []
+    }
+    if (jackets.length > 0 ){
+
+    
+
+ for(let i = 0; i < jackets.length; i++){
 
     const jacketwrape= document.createElement("div")
     jacketwrape.classList.add("single-product");
 
 
-    const containerFirst = document.createElement8("div")
+    const containerFirst = document.createElement("div")
     containerFirst.classList.add(ContFirst);
     jacketwrape.appendChild(containerFirst)
 
     const jacketImage = document.createElement('img')
-    jacketImage.src = localStorageList[i].image 
-    jacketImage.alt = localStorageList[i].title
+    jacketImage.src = jackets[i].image 
+    jacketImage.alt =jackets[i].title
     containerFirst.appendChild(jacketImage) 
 
 
-   const jacketTitle = document.createElement("p")
-   jacketTitle.textContent = localStorageList[i].title 
+   const jacketTitle = document.createElement("h2")
+   jacketTitle.textContent = jackets[i].title 
    jacketTitle.classList.add = ("title")
    containerFirst.appendChild(jacketTitle) 
 
@@ -26,30 +39,74 @@ for(let i = 0; i < localStorageList.length; i++){
    jacketwrape.appendChild(containerSecond)
 
 
-   const quantityWrape = document.createElement("div")
+   const quantityWrape = document.createElement("p")
+   quantityWrape.textContent = quantity;
    quantityWrape.classList.add('quantitywrape')
    containerSecond.appendChild(quantityWrape)
 
 
-   const buttonMinus = document.createElement("button")
-   buttonMinus.classList.add('Minus')
-   buttonMinus.textContent = "-"
-   buttonMinus.dataset.action ='decrease'
-   quantityWrape.appendChild(buttonMinus)
-   buttonMinus.addEventListener("click", removeOneFromCart)
+   const buttonRemove = document.createElement("button")
+   buttonRemove.classList.add('remove')
+   buttonRemove.textContent = "-"
+   quantityWrape.appendChild(buttonRemove)
+   buttonRemove.addEventListener("click", removeOneFromCart)
 
 
-   const jacketQnty = document.createElement("p")
-   jacketQnty.textContent = localStorageList[i].quantity 
-   jacketQnty.dataset.quantity = localStorageList[i].quantity
-   jacketQnty.dataset.title= localStorageList[i].title
+   const jacketprice = document.createElement("p")
+   jacketprice .textContent = jackets[i].price
+   containerSecond.appendChild(jacketprice)
+
+   cartItems.appendChild( jacketwrape)
 
 
+}
 
 
+ return cartItems
+
+} else{
+    return []
+
+}
 
 
+}
+
+function  removeOneFromCart(event){
+    cartItems.innerHTML = ""
+
+   const title = event.target.dataset.title
+
+   if(localStorageList.length === 1){
+
+    cartItems.innerHTML =""
+    localStorage.clear(jacketItem);
+    cartItems.innerHTML = "your cart is empty";
+   return
+
+   }
+
+   const filterOut = localStorageList.filter(jacket => jacket.title !== title)
+
+   localStorageList = filterOut
+
+   localStorageList.setItem("jacketitem", JSON.stringify(localStorageList))
+
+   
+
+    const html = itemCartForCart(localStorageList)
+
+    cartItems.appendChild(html)
+    
 
 
 
 }
+
+
+
+
+
+
+
+
