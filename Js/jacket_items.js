@@ -1,10 +1,10 @@
  
- let jackets = getFromStorage('jacketitem')
  const cartItems = document.querySelector('.local-storage')
-
+ const jacketWrape = document.createElement('div')
+ jacketWrape.classList.add('Jacket-wrape');
 
  export function itemCartForCart(jackets){
-    cartItems.innerHTML = ''
+    jacketWrape.innerHTML = ''
     if (jackets.length === 0 ){
         return []
     }
@@ -19,7 +19,7 @@
 
 
     const containerFirst = document.createElement("div")
-    containerFirst.classList.add(ContFirst);
+    containerFirst.classList.add('ContFirst');
     jacketwrape.appendChild(containerFirst)
 
     const jacketImage = document.createElement('img')
@@ -35,12 +35,12 @@
 
 
    const containerSecond = document.createElement("div")
-   containerSecond.classList.add(ContSecond);
+   containerSecond.classList.add('ContSecond');
    jacketwrape.appendChild(containerSecond)
 
 
    const quantityWrape = document.createElement("p")
-   quantityWrape.textContent = quantity;
+   quantityWrape.textContent = jackets.quantity;
    quantityWrape.classList.add('quantitywrape')
    containerSecond.appendChild(quantityWrape)
 
@@ -49,6 +49,7 @@
    buttonRemove.classList.add('remove')
    buttonRemove.textContent = "-"
    quantityWrape.appendChild(buttonRemove)
+   buttonRemove.dataset.title = jackets[i].title
    buttonRemove.addEventListener("click", removeOneFromCart)
 
 
@@ -56,32 +57,32 @@
    jacketprice .textContent = jackets[i].price
    containerSecond.appendChild(jacketprice)
 
-   cartItems.appendChild( jacketwrape)
+   jacketWrape.appendChild( jacketwrape)
 
 
 }
 
 
- return cartItems
+ return jacketWrape
 
 } else{
     return []
 
 }
 
-
 }
 
 function  removeOneFromCart(event){
    
+jacketWrape. innerHTML = []
 
    const title = event.target.dataset.title
 
-   if(localStorageList.length === 1){
+   if(localStorage.length === 1){
 
-    cartItems.innerHTML =""
+    jacketWrape.innerHTML =""
     localStorage.clear(jacketItem);
-    cartItems.innerHTML = "your cart is empty";
+    jacketWrape.innerHTML = "your cart is empty";
    return
 
    }
@@ -90,7 +91,7 @@ function  removeOneFromCart(event){
 
    localStorageList = filterOut
 
-   localStorageList.setItem("jacketitem", JSON.stringify(localStorageList))
+   localStorage.setItem("jacketitem", JSON.stringify(localStorageList))
 
    
 
