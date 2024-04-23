@@ -73,7 +73,7 @@
 }
 
 function  removeOneFromCart(event){
-    cartItems.innerHTML = ""
+   
 
    const title = event.target.dataset.title
 

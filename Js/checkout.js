@@ -1,5 +1,5 @@
  
-import { itemCartForCart } from "./jacket.items.js";
+import { itemCartForCart } from "./jacket_items.js";
 import { getFromStorage } from "./storage.js";
 
 let localStorageList = getFromStorage('jacketitem')
