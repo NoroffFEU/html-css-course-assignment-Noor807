@@ -102,7 +102,7 @@ function isItemincart(item, titleToCheck){
 }
 
 
-   export function getFromStorage(key){
+   function getFromStorage(key){
   const savedInStorage = localStorage.getItem(key)
 
   if(!savedInStorage) {

@@ -1,5 +1,5 @@
 
-import { getFromStorage } from "./product.js";
+import { getFromStorage } from "./storage.js";
 
 let localStorageList = getFromStorage('jacketitem')
 
@@ -11,11 +11,11 @@ if (localStorageList.length >0){
     cartItems.innerHTML += `<div class="single-item">
     
      <div class="product-in-cart">
-     <img src="${localStorageList[i].image.url}" alt="${localStorageList[i].title}">
-      <h2>  ${localStorageList[i].title}</h2>
+     <img class="cart-img" src="${localStorageList[i].image}" alt="${localStorageList[i].title}">
+      <h2 class="cart-h2">  ${localStorageList[i].title}</h2>
       <p>qty:   $${localStorageList[i].quantity} </p>
       <p>Price:   $${localStorageList[i].price} </p>
-      <button class="remove">x</button>
+      <button class="remove">Remove</button>
     
       
       </div>        
