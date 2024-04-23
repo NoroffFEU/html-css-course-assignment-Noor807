@@ -4,10 +4,13 @@
  jacketWrape.classList.add('Jacket-wrape');
 
  export function itemCartForCart(jackets){
-    jacketWrape.innerHTML = ''
+
+    jacketWrape.innerHTML = ""
+
     if (jackets.length === 0 ){
         return []
     }
+
     if (jackets.length > 0 ){
 
     
@@ -40,25 +43,27 @@
 
 
    const quantityWrape = document.createElement("p")
-   quantityWrape.textContent = jackets.quantity;
+   quantityWrape.textContent =  "Qty." + jackets[i].quantity;
    quantityWrape.classList.add('quantitywrape')
    containerSecond.appendChild(quantityWrape)
 
 
-   const buttonRemove = document.createElement("button")
-   buttonRemove.classList.add('remove')
-   buttonRemove.textContent = "-"
-   quantityWrape.appendChild(buttonRemove)
-   buttonRemove.dataset.title = jackets[i].title
-   buttonRemove.addEventListener("click", removeOneFromCart)
-
-
    const jacketprice = document.createElement("p")
-   jacketprice .textContent = jackets[i].price
+   jacketprice .textContent = "$" + jackets[i].price
    containerSecond.appendChild(jacketprice)
 
-   jacketWrape.appendChild( jacketwrape)
+   
 
+
+   const buttonRemove = document.createElement("button")
+   buttonRemove.classList.add('remove')
+   buttonRemove.dataset.title = jackets[i].title
+   buttonRemove.textContent = "remove"
+   containerSecond.appendChild(buttonRemove)
+    buttonRemove.addEventListener("click", removeOneFromCart)
+
+   jacketWrape.appendChild( jacketwrape)
+   
 
 }
 
@@ -66,28 +71,30 @@
  return jacketWrape
 
 } else{
-    return []
+
+     return []
 
 }
 
 }
 
 function  removeOneFromCart(event){
-   
-jacketWrape. innerHTML = []
+   console.log("dataset" , event)
+
+  cartItems. innerHTML = ""
 
    const title = event.target.dataset.title
 
-   if(localStorage.length === 1){
+   if(localStorageList.length === 1){
 
-    jacketWrape.innerHTML =""
-    localStorage.clear(jacketItem);
-    jacketWrape.innerHTML = "your cart is empty";
+    cartItems.innerHTML =""
+    localStorage.clear("jacketitem");
+    cartItems.innerHTML = "your cart is empty";
    return
 
    }
 
-   const filterOut = localStorageList.filter(jacket => jacket.title !== title)
+   const filterOut = localStorageList.filter(item => item.title !== title)
 
    localStorageList = filterOut
 
