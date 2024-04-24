@@ -1,5 +1,5 @@
  
-import { itemCartForCart } from "./jacket_items.js";
+import { itemCartForCart } from "./jacket.items.js";
 
 
 import { getFromStorage } from "./storage.js";
@@ -18,5 +18,8 @@ if (localStorageList.length > 0){
 } else{
     cartItems.innerHTML = 'cart is empty'
 }
+
+
+
 
 

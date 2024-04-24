@@ -1,7 +1,14 @@
  
- const cartItems = document.querySelector('.local-storage')
+ import { getFromStorage } from "./storage";
+
+ let localStorageList = getFromStorage('jacketitem')
+ const cartItem = document.querySelector('.local-strong')
+
+
  const jacketWrape = document.createElement('div')
- jacketWrape.classList.add('Jacket-wrape');
+ jacketWrape.classList.add('jacket-wrape')
+
+ 
 
  export function itemCartForCart(jackets){
 
