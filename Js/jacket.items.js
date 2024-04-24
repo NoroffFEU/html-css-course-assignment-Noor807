@@ -1,5 +1,5 @@
  
- import { getFromStorage } from "./storage";
+ import { getFromStorage } from "./storage.js";
 
  let localStorageList = getFromStorage('jacketitem')
  const cartItem = document.querySelector('.local-strong')
@@ -88,15 +88,15 @@
 function  removeOneFromCart(event){
    console.log("dataset" , event)
 
-  cartItems. innerHTML = ""
+  cartItem. innerHTML = ""
 
    const title = event.target.dataset.title
 
    if(localStorageList.length === 1){
 
-    cartItems.innerHTML =""
+    cartItem.innerHTML =""
     localStorage.clear("jacketitem");
-    cartItems.innerHTML = "your cart is empty";
+    cartItem.innerHTML = "your cart is empty";
    return
 
    }
@@ -111,7 +111,7 @@ function  removeOneFromCart(event){
 
     const html = itemCartForCart(localStorageList)
 
-    cartItems.appendChild(html)
+    cartItem.appendChild(html)
     
 
 
