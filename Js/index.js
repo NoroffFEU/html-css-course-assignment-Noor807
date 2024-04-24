@@ -1,8 +1,16 @@
-//import { getToken, getApiKey } from "./api.js";
+import { cartQtyTotalCount } from "./countStorage.js";
+
+import { getFromStorage } from "./storage.js";
+let localStorageList = getFromStorage('jacketitem')
+
+
+
+const cartCount = document.querySelector('.cart-count')
 const jacketsContainer = document.querySelector(".jackets")
 
-const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
 
+const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
+cartCount.textContent = cartQtyTotalCount(localStorageList)
 
 async function getJackets() {
 

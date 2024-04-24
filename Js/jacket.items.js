@@ -1,14 +1,23 @@
  
+ 
+ import { cartSumTotalPrice ,cartQtyTotalCount } from "./countStorage.js"; 
+ 
  import { getFromStorage } from "./storage.js";
 
  let localStorageList = getFromStorage('jacketitem')
  const cartItem = document.querySelector('.local-storage')
 
+ const cartCount = document.querySelector('.cart-count')
+ cartCount.textContent = cartQtyTotalCount(localStorageList)
 
  const jacketWrape = document.createElement('div')
  jacketWrape.classList.add('jacket-wrape')
 
- 
+
+ const totalAmount = document.querySelector('price-holder')
+ //totalAmount.textContent = cartSumTotalPrice(localStorageList)
+
+
 
  export function itemCartForCart(jackets){
 
@@ -90,6 +99,8 @@ function  removeOneFromCart(event){
     cartItem.innerHTML =""
     localStorage.clear("jacketitem");
     cartItem.innerHTML = "your cart is empty";
+    totalAmount.textContent = '$'+ 0;
+    cartCount.textContent = cartQtyTotalCount(localStorageList)
    return
 
    }
@@ -103,8 +114,8 @@ function  removeOneFromCart(event){
     const html = itemCartForCart(localStorageList)
 
     cartItem.appendChild(html)
-    
-
+    totalAmount.textContent =  '$' + cartSumTotalPrice(localStorageList) 
+    cartCount.textContent = cartQtyTotalCount(localStorageList)
 
 
 }

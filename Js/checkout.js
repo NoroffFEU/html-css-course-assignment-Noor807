@@ -5,7 +5,9 @@ import { itemCartForCart } from "./jacket.items.js";
 import { getFromStorage } from "./storage.js";
 
 let localStorageList = getFromStorage('jacketitem')
-
+const cartCount = document.querySelector('.cart-count')
+ 
+cartCount.textContent = cartQtyTotalCount(localStorageList)
 const cartItems = document.querySelector('.local-storage')
 
 

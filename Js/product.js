@@ -1,10 +1,13 @@
 
-
+import {getFromStorage } from "./storage.js"; 
+import { cartSumTotalPrice ,cartQtyTotalCount } from "./countStorage.js"; 
 const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
  
 const jacketsContainer = document.querySelector(".jacket-detail")
 
+const cartCount = document.querySelector('.cart-count')
 const img = document.querySelector(".product-img")
+
 
  const addCartButton =document.querySelector('.button')
 
@@ -17,6 +20,7 @@ const jacketId = searchParameters.get("jacketid")
 let localStorageList = getFromStorage('jacketitem')
 
 let jacketDetail = {}
+
 
 // console.log(jacketId)
 
@@ -102,15 +106,15 @@ function isItemincart(item, titleToCheck){
 }
 
 
-   function getFromStorage(key){
-  const savedInStorage = localStorage.getItem(key)
+//    function getFromStorage(key){
+//   const savedInStorage = localStorage.getItem(key)
 
-  if(!savedInStorage) {
-    return []
-  }
+//   if(!savedInStorage) {
+//     return []
+//   }
 
-  return JSON.parse(savedInStorage)
-}
+//   return JSON.parse(savedInStorage)
+// }
 
-
+cartCount.textContent = cartQtyTotalCount(localStorageList)
 
