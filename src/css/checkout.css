@@ -2,7 +2,7 @@
 
 .cart-summary{
     width: 100%;
-    max-width: 500px;
+    max-width: 500px; 
     align-items: center;
     margin: 3rem 2rem;
     padding: 2rem 2rem;
@@ -14,8 +14,34 @@
        font-size: 14px;
 }
 
+
 .local-storage img{
     width: 100%;
     max-width: 60px;
 
+}
+.single-product{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    border-bottom: 1px solid black;
+    padding: 10px;
+   
+   
+
+
+}
+
+
+.contSecond{
+    display: flex;
+    flex-direction: column;
+}
+
+.remove{
+    background-color:orange;
+    color: black;
+    width: 75px;
+    border-radius: 10px;
+    border: none;
 }

@@ -2,7 +2,7 @@
  import { getFromStorage } from "./storage.js";
 
  let localStorageList = getFromStorage('jacketitem')
- const cartItem = document.querySelector('.local-strong')
+ const cartItem = document.querySelector('.local-storage')
 
 
  const jacketWrape = document.createElement('div')
@@ -37,30 +37,23 @@
     jacketImage.alt =jackets[i].title
     containerFirst.appendChild(jacketImage) 
 
-
-   const jacketTitle = document.createElement("h2")
-   jacketTitle.textContent = jackets[i].title 
-   jacketTitle.classList.add = ("title")
-   containerFirst.appendChild(jacketTitle) 
-
-
    const containerSecond = document.createElement("div")
    containerSecond.classList.add('ContSecond');
    jacketwrape.appendChild(containerSecond)
 
+   const jacketTitle = document.createElement("h2")
+   jacketTitle.textContent = jackets[i].title 
+   jacketTitle.classList.add = ("title")
+   containerSecond.appendChild(jacketTitle) 
 
    const quantityWrape = document.createElement("p")
    quantityWrape.textContent =  "Qty." + jackets[i].quantity;
    quantityWrape.classList.add('quantitywrape')
    containerSecond.appendChild(quantityWrape)
 
-
    const jacketprice = document.createElement("p")
    jacketprice .textContent = "$" + jackets[i].price
    containerSecond.appendChild(jacketprice)
-
-   
-
 
    const buttonRemove = document.createElement("button")
    buttonRemove.classList.add('remove')
@@ -74,7 +67,6 @@
 
 }
 
-
  return jacketWrape
 
 } else{
@@ -86,9 +78,10 @@
 }
 
 function  removeOneFromCart(event){
+
    console.log("dataset" , event)
 
-  cartItem. innerHTML = ""
+   cartItem.innerHTML = ""
 
    const title = event.target.dataset.title
 
@@ -105,9 +98,7 @@ function  removeOneFromCart(event){
 
    localStorageList = filterOut
 
-   localStorage.setItem("jacketitem", JSON.stringify(localStorageList))
-
-   
+   localStorage.setItem("jacketitem" , JSON.stringify(localStorageList))
 
     const html = itemCartForCart(localStorageList)
 
