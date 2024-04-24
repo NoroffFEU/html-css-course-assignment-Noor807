@@ -1,0 +1,21 @@
+@import url(./Global.css);
+
+.cart-summary{
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    margin: 3rem 2rem;
+    padding: 2rem 2rem;
+
+   
+}
+
+.cart-summary h2{
+       font-size: 14px;
+}
+
+.local-storage img{
+    width: 100%;
+    max-width: 60px;
+
+}
