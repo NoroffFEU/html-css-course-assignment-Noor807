@@ -49,6 +49,16 @@ a {
 
 }
 
+#loader{
+    display: none;
+}
+
+#loader.show{
+    display: block;
+}
+
+
+
 
 header{
 

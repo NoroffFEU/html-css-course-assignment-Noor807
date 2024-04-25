@@ -8,17 +8,29 @@ let localStorageList = getFromStorage('jacketitem')
 const cartCount = document.querySelector('.cart-count')
 const jacketsContainer = document.querySelector(".jackets")
 
+const loaderDiv = document.getElementById('loader')
+
+function showLoader(){
+  loaderDiv.classList.add('show')
+
+}
+
+function hideLoader(){
+  loaderDiv.classList.remove('show')
+}
+
 
 const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
 cartCount.textContent = cartQtyTotalCount(localStorageList)
 
 async function getJackets() {
 
+  showLoader();
     
-
   const req = await fetch(baseURL )
 
   const result = await req.json()
+  hideLoader();
 
   for (let i = 0; i < result.length; i++){
      jacketsContainer.innerHTML += `<a class="jacket-item" href="./product/index.html?jacketid=${result[i].id}">
