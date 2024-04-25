@@ -30,6 +30,7 @@ async function getJackets() {
       <p>${result[i].gender} </p>
       <p> ${result[i].sizes} </p>
       <p>$ ${result[i].price} </p>
+      <p class="discount"> Discount:$${result[i].discountedPrice} </p>
       
       
      

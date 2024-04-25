@@ -14,8 +14,8 @@
  jacketWrape.classList.add('jacket-wrape')
 
 
- const totalAmount = document.querySelector('price-holder')
- //totalAmount.textContent = cartSumTotalPrice(localStorageList)
+ const totalAmount = document.querySelector('.price-holder')
+ 
 
 
 

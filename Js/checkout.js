@@ -11,7 +11,7 @@ const cartCount = document.querySelector('.cart-count')
  
 cartCount.textContent = cartQtyTotalCount(localStorageList)
 const cartItems = document.querySelector('.local-storage')
-const totalAmount = document.querySelector('price-holder')
+const totalAmount = document.querySelector('.price-holder')
 
 if (localStorageList.length > 0){
 
