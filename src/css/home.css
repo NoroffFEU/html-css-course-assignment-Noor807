@@ -127,8 +127,14 @@ a:hover {
    flex-wrap: wrap;
    margin: 3rem 4rem;
    gap: 3rem;
+
 }
 
+  
+  
+
+
+ 
 
 /* .jacket-item{
     display: flex;
@@ -141,13 +147,6 @@ a:hover {
     margin-bottom: 3rem;
 
 } */
-img{ 
-    width: 100%;
-    max-width: 500px;
-  
-   
-    
-}
 
 .jacket-item {
     display: flex;
@@ -180,7 +179,7 @@ img{
     flex-direction: row;
     gap: 3rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin-left: 4rem;
     border:i px solid black ;
     background: #4D6C72;
@@ -193,6 +192,8 @@ img{
 .collection{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 800px;
     gap: 3rem;
     align-items: center;
     justify-content: center;
@@ -222,6 +223,12 @@ img{
 
 }
 
+img{
+    width: 100%;
+    max-width: 600px;
+}
+
+
 
 
 
@@ -231,6 +238,11 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     .men-collection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection{
         display: flex;
         flex-direction: column;
     }
