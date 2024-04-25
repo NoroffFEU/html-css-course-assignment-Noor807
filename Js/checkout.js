@@ -1,4 +1,6 @@
- 
+
+
+import { cartSumTotalPrice ,cartQtyTotalCount } from "./countStorage.js";
 import { itemCartForCart } from "./jacket.items.js";
 
 
@@ -9,7 +11,7 @@ const cartCount = document.querySelector('.cart-count')
  
 cartCount.textContent = cartQtyTotalCount(localStorageList)
 const cartItems = document.querySelector('.local-storage')
-
+const totalAmount = document.querySelector('price-holder')
 
 if (localStorageList.length > 0){
 
@@ -21,6 +23,8 @@ if (localStorageList.length > 0){
     cartItems.innerHTML = 'cart is empty'
 }
 
+
+totalAmount.textContent ='$'+ cartSumTotalPrice(localStorageList)
 
 
 

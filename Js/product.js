@@ -82,7 +82,7 @@ function addToCart(){
     localStorageList.push(jacketToAdd)
 
     localStorage.setItem("jacketitem", JSON.stringify(localStorageList) )
-    
+    cartCount.textContent = cartQtyTotalCount(localStorageList)
 
    }
 

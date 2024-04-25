@@ -100,7 +100,7 @@ function  removeOneFromCart(event){
     localStorage.clear("jacketitem");
     cartItem.innerHTML = "your cart is empty";
     totalAmount.textContent = '$'+ 0;
-    cartCount.textContent = cartQtyTotalCount(localStorageList)
+    cartCount.textContent = 0
    return
 
    }
