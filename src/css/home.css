@@ -106,20 +106,17 @@ a:hover {
     max-width: 2000px;
     height: 800px;
 }
-.explore{
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-}
+
 .explore-heading{
     align-content: flex-start;
     margin: 3rem 4rem;
    
 }
-.explore-heading p{
-    margin-left: 3rem;
-    align-items: center;
-    justify-content: center;
+
+.intro-paragraph{
+    margin: 3rem 4rem;
 }
+
 
 
 .jackets{
@@ -144,13 +141,6 @@ a:hover {
 }
 
   
-  
-
-
- 
-
-
-
 .jacket-item {
     display: flex;
     flex-direction: column;
@@ -179,9 +169,7 @@ a:hover {
   
 }
 
-.intro-paragraph{
-    margin: 3rem 4rem;
-}
+
 
 .men-collection{
     display: flex;
@@ -191,17 +179,23 @@ a:hover {
     max-width: 1000px;
     border: 1px  solid black ;
     background: #4D6C72;
-    height: 300px;   
+      
 
 }
 .men-collection img{
     width: 100%;
     max-width: 450px;
+
+    @media(max-width:1195px){
+        max-width:100%; 
+    }
+
 }
 
 .collection{
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     gap: 4rem;
     height: fit-content;
