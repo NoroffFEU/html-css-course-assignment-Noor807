@@ -7,6 +7,7 @@ const jacketsContainer = document.querySelector(".jacket-detail")
 
 const cartCount = document.querySelector('.cart-count')
 const img = document.querySelector(".product-img")
+const loaderDiv = document.getElementById('loader')
 
 
  const addCartButton =document.querySelector('.button')
@@ -26,12 +27,13 @@ let jacketDetail = {}
 
 
 async function getJacketDetail() {
-
+ showLoader();
   const completejacketUrl = baseURL  + jacketId
  
   const req = await fetch(completejacketUrl)
- 
+  await delay(3000)
   const result = await req.json()
+  hideLoader();
   jacketDetail = result
   console.log = (result)
   img.src = `${result.image}`
@@ -103,6 +105,19 @@ function isItemincart(item, titleToCheck){
   if(found) {
     return true
   }
+}
+
+function showLoader(){
+  loaderDiv.classList.add('show')
+
+}
+
+function hideLoader(){
+  loaderDiv.classList.remove('show')
+}
+function delay(ms) {
+ 
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 

@@ -10,14 +10,7 @@ const jacketsContainer = document.querySelector(".jackets")
 
 const loaderDiv = document.getElementById('loader')
 
-function showLoader(){
-  loaderDiv.classList.add('show')
 
-}
-
-function hideLoader(){
-  loaderDiv.classList.remove('show')
-}
 
 
 const baseURL = "https://api.noroff.dev/api/v1/rainy-days/"
@@ -26,9 +19,10 @@ cartCount.textContent = cartQtyTotalCount(localStorageList)
 async function getJackets() {
 
   showLoader();
+ 
     
   const req = await fetch(baseURL )
-
+  await delay(3000)
   const result = await req.json()
   hideLoader();
 
@@ -54,7 +48,18 @@ async function getJackets() {
  console.log(result)
 } 
 
+function showLoader(){
+  loaderDiv.classList.add('show')
 
+}
+
+function hideLoader(){
+  loaderDiv.classList.remove('show')
+}
+function delay(ms) {
+ 
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 
 getJackets()
