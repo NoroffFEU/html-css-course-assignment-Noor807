@@ -1,7 +1,7 @@
 @import url(./Global.css);
 @import url(./loader.css);
 
- *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,54 +101,55 @@ a:hover {
 }
 
 
-.header-img{
+.header-img {
     width: 100%;
     max-width: 2000px;
     height: 800px;
 }
 
-.explore-heading{
+.explore-heading {
     align-content: flex-start;
     margin: 3rem 4rem;
-   
+
 }
 
-.intro-paragraph{
+.intro-paragraph {
     margin: 3rem 4rem;
 }
 
 
 
-.jackets{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   margin: 3rem 4rem;
-   gap: 3rem;
+.jackets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 4rem;
+    gap: 3rem;
 
-   
+
 }
-img{
+
+img {
     width: 100%;
     max-width: 600px;
 
 
 }
 
-.container{
+.container {
     align-items: center;
     justify-content: center;
     margin: 3rem 3rem;
 }
 
-  
+
 .jacket-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     border: 1px grey;
-    background-color:#B3C0C2;
+    background-color: #B3C0C2;
     width: 100%;
     max-width: 300px;
     padding: 0.5rem;
@@ -163,37 +164,39 @@ img{
 
 
 } */
-.seller-heading{
+.seller-heading {
     margin: 3rem 4rem;
-   border-bottom: 2px solid black;
-   width: 1000px;
-  
+    border-bottom: 2px solid black;
+    width: 100px;
+    max-width: 1000px;
+
 }
 
 
 
-.men-collection{
+.men-collection {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     width: 100%;
     max-width: 1000px;
-    border: 1px  solid black ;
+    border: 1px solid black;
     background: #4D6C72;
-      
+
 
 }
-.men-collection img{
+
+.men-collection img {
     width: 100%;
     max-width: 450px;
 
-    @media(max-width:1195px){
-        max-width:100%; 
+    @media(max-width:1195px) {
+        max-width: 100%;
     }
 
 }
 
-.collection{
+.collection {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -203,12 +206,12 @@ img{
 
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-   margin: 2rem 1rem;
+    margin: 2rem 1rem;
     margin-left: 1.5rem;
 
 
@@ -232,16 +235,17 @@ img{
 
 
 @media (max-width:1195px) {
-    .best-seller{
+    .best-seller {
         display: flex;
         grid-template-columns: repeat(2, 1fr);
     }
-    .men-collection{
+
+    .men-collection {
         display: flex;
         flex-direction: column;
     }
 
-    .collection{
+    .collection {
         display: flex;
         flex-direction: column;
     }
@@ -250,21 +254,22 @@ img{
 }
 
 @media (max-width:790px) {
-    .best-seller{
+    .best-seller {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .best-seller{
+    .best-seller {
         display: flex;
         grid-template-columns: repeat(2, 1fr);
     }
-    .men-collection{
+
+    .men-collection {
         display: flex;
         flex-direction: column;
     }
 
-    .collection{
+    .collection {
         display: flex;
         flex-direction: column;
     }
