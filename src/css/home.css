@@ -165,8 +165,8 @@ img{
 } */
 .seller-heading{
     margin: 3rem 4rem;
-   text-decoration: underline 2px solid black;
-   width: 100%;
+   border-bottom: 2px solid black;
+   width: 1000px;
   
 }
 
