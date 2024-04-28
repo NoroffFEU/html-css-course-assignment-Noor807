@@ -27,7 +27,7 @@
 .child-div{
     display: flex;
     flex-direction: column;
-    gap: 0.5 rem;
+    gap: 1rem;
     justify-content: center;
 
 }
@@ -43,14 +43,52 @@
 
 .button{
     background-color:orange;
-    color: #fff;
+    color:black;
     text-align: center;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin-top: 1rem;
     padding: 0.5rem 2rem;
     max-width: 150px;
-   
+     
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    margin-bottom: 7rem;
+
+}
+
+@media (max-width:1190px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:790px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-img{
+        width: 100%;
+        max-width: 300px;
+       
+    }
+
+    .parent-div{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 3rem 3rem;
+        align-items: center;
+    }
 
 }
 
@@ -106,26 +144,3 @@
 
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
-    margin-bottom: 7rem;
-
-}
-
-@media (max-width:1190px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width:790px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
