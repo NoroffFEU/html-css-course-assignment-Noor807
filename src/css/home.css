@@ -217,7 +217,7 @@ img {
 }
 
 .content p {
-    width: 100%;
+   width: 100%;
     font-size: clamp(10px, 1vw+1rem, 16px);
 }
 
@@ -282,6 +282,11 @@ img {
         flex-direction: column;
         margin: 1rem 1rem;
     }
+
+    .content p {
+        max-width: 100%;
+         font-size: clamp(10px, 1vw+1rem, 16px);
+     }
 
 
 
