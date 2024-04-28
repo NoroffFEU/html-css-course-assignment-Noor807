@@ -106,6 +106,8 @@ a:hover {
 .explore-heading {
     align-content: flex-start;
     margin: 1rem 4rem;
+    font-family: 'inter', sans-serif;
+    font-size: clamp(16px, 1vw+1rem, 24px);
 
 }
 
