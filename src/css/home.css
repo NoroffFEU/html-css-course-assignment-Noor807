@@ -123,7 +123,7 @@ a:hover {
     flex-wrap: wrap;
     margin: 1rem 2rem;
     gap: 1rem;
-   
+
 
 }
 
@@ -138,7 +138,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: 3rem 2rem;
-  
+
 }
 
 
@@ -214,12 +214,16 @@ img {
     margin: 2rem 1rem;
     margin-left: 1.5rem;
 
+    p {
+        width: 100%;
+    }
+
 
 }
 
 .shop-now {
     background-color: orange;
-    color:black;
+    color: black;
     text-align: center;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
@@ -253,15 +257,15 @@ img {
     .seller-heading {
         margin: 1rem 1rem;
         width: 100%;
-        max-width:400px;
-    
+        max-width: 400px;
+
     }
 
 
 }
 
 @media (max-width:790px) {
-    
+
 
     .best-seller {
         display: flex;
@@ -276,8 +280,9 @@ img {
     .collection {
         display: flex;
         flex-direction: column;
+        margin: 1rem 1rem;
     }
-   
+
 
 
 }
