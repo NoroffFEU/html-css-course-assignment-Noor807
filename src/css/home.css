@@ -135,7 +135,8 @@ img {
 .container {
     align-items: center;
     justify-content: center;
-    margin: 3rem 3rem;
+    margin: 3rem 2rem;
+  
 }
 
 
@@ -234,7 +235,7 @@ img {
 @media (max-width:1195px) {
     .best-seller {
         display: flex;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .men-collection {
@@ -258,10 +259,7 @@ img {
 }
 
 @media (max-width:790px) {
-    .best-seller {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
+    
 
     .best-seller {
         display: flex;
