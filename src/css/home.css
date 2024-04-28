@@ -214,11 +214,11 @@ img {
     margin: 2rem 1rem;
     margin-left: 1.5rem;
 
-    p {
-        width: 100%;
-    }
+}
 
-
+.content p {
+    width: 100%;
+    font-size: clamp(10px, 1vw+1rem, 16px);
 }
 
 .shop-now {
