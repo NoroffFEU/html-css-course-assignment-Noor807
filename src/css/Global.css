@@ -173,6 +173,7 @@ a:hover {
     gap: 1rem;
     padding: 1rem 0rem;
     margin-top: 2rem;
+    margin-left: 2rem;
     width: 100%;
     max-width: 300px;
 
@@ -262,6 +263,7 @@ main{
     }
 
 }
+
 @media(max-width:900px){
 
     #dekstop-footer{
