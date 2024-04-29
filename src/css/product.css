@@ -94,53 +94,9 @@
 
 
 
-/* .jacket-store {
-    font-size: clamp(14px, 1vw+1rem, 30px);
-    font-family: 'inter', sans-serif;
-    font-style: bold;
-    color: black;
-    margin-top: 5rem;
-
-}
 
 
-.product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border: 1px grey;
-    background-color: lightgray;
-    width: 100%;
-    max-width: 300px;
-    padding: 0.5rem;
-    gap: 1rem;
 
-    >a img {
-        width: 100%;
-    }
-} */
-
-/* >h2 {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0;
-    }
-
-    >p {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0;
-
-    }
-
-    >h3 {
-        font-size: clamp(14px, 1vw+1rem, 30px);
-        font-family: 'inter', sans-serif;
-        font-style: bold;
-        margin: 0; */
 
 
 

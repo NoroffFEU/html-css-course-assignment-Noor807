@@ -107,7 +107,7 @@ a:hover {
     align-content: flex-start;
     margin: 1rem 4rem;
     font-family: 'inter', sans-serif;
-    font-size: clamp(16px, 1vw+1rem, 24px);
+    font-size: clamp(16px, 1vw + 1rem, 24px);
 
 }
 
@@ -168,6 +168,7 @@ img {
     border-bottom: 2px solid black;
     width: 100%;
     max-width: 1000px;
+    font-size: clamp(16px, 1vw + 1rem, 24px);
 
 }
 
@@ -218,7 +219,7 @@ img {
 
 .content p {
    width: 100%;
-    font-size: clamp(10px, 1vw+1rem, 16px);
+    font-size: clamp(10px, 1vw + 1rem, 16px);
 }
 
 .shop-now {
