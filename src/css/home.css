@@ -100,7 +100,7 @@ a:hover {
 .header-img {
     width: 100%;
     max-width: 2000px;
-   
+
 }
 
 .explore-heading {
@@ -201,7 +201,7 @@ img {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 1rem 1rem;
     gap: 4rem;
     height: fit-content;
 
@@ -212,14 +212,14 @@ img {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-    margin: 2rem 1rem;
-    margin-left: 1.5rem;
+    margin: 2rem 0.5rem;
+
 
 }
 
 .content p {
-   width: 100%;
-   font-size: clamp(10px, 1vw + 1rem, 16px);
+    width: 100%;
+    font-size: clamp(10px, 1vw + 1rem, 16px);
 }
 
 .shop-now {
@@ -254,7 +254,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
     }
 
     .seller-heading {
@@ -288,9 +288,8 @@ img {
     }
 
     .content p {
-        max-width: 500px;
-         font-size: clamp(10px, 1vw + 1rem, 16px);
-     }
+        font-size: clamp(9px, 1vw + 1rem, 16px);
+    }
 
 
 
