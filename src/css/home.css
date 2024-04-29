@@ -111,14 +111,14 @@ a:hover {
 
 .explore-heading {
     align-content: flex-start;
-    margin: 1rem 1rem;
+    margin: 2rem 0.5rem;
     font-family: 'inter', sans-serif;
-    font-size: clamp(16px, 1vw + 1rem, 24px);
+    font-size: clamp(15px, 1vw + 1rem, 24px);
 
 }
 
 .intro-paragraph {
-    margin: 1rem 1.5rem;
+    margin: 1rem 1rem;
 }
 
 
@@ -143,7 +143,7 @@ img {
 .container {
     align-items: center;
     justify-content: center;
-    margin: 3rem 2rem;
+    margin: 2rem 1rem;
 
 }
 
@@ -174,7 +174,7 @@ img {
     border-bottom: 2px solid black;
     width: 100%;
     max-width: 1000px;
-    font-size: clamp(16px, 1vw + 1rem, 24px);
+    font-size: clamp(14px, 1vw + 1rem, 24px);
 
 }
 
@@ -194,7 +194,7 @@ img {
 
 .men-collection img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
 
     @media(max-width:1195px) {
         max-width: 100%;
@@ -219,14 +219,14 @@ img {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0.3rem;
 
 
 }
 
 .content p {
     width: 100%;
-    font-size: clamp(10px, 1vw + 1rem, 16px);
+    font-size: clamp(8px, 1vw + 1rem, 14px);
 }
 
 .shop-now {
@@ -280,18 +280,22 @@ img {
     .men-collection {
         display: flex;
         flex-direction: column;
+        max-width: 600px;
+
     }
 
     .collection {
         display: flex;
         flex-direction: column;
         margin: 1rem 1rem;
-        max-width: 500px;
+        max-width: 450px;
     }
 
-    .content p {
-        font-size: clamp(9px, 1vw + 1rem, 16px);
+    .jacket-item{
+        max-width: 280px;
     }
+
+    
 
 
 
