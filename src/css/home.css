@@ -103,16 +103,22 @@ a:hover {
 
 }
 
+.main-body {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
 .explore-heading {
     align-content: flex-start;
-    margin: 1rem 4rem;
+    margin: 1rem 1rem;
     font-family: 'inter', sans-serif;
     font-size: clamp(16px, 1vw + 1rem, 24px);
 
 }
 
 .intro-paragraph {
-    margin: 1rem 4rem;
+    margin: 1rem 1.5rem;
 }
 
 
@@ -164,7 +170,7 @@ img {
 } */
 
 .seller-heading {
-    margin: 3rem 4rem;
+    margin: 2rem 1.5rem;
     border-bottom: 2px solid black;
     width: 100%;
     max-width: 1000px;
@@ -201,7 +207,8 @@ img {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin: 1rem 1rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
     gap: 4rem;
     height: fit-content;
 
@@ -236,9 +243,6 @@ img {
 
 
 
-
-
-
 @media (max-width:1195px) {
     .best-seller {
         display: flex;
@@ -248,12 +252,14 @@ img {
     .men-collection {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
     }
 
     .collection {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 1rem;
 
     }
 
@@ -270,10 +276,6 @@ img {
 @media (max-width:790px) {
 
 
-    .best-seller {
-        display: flex;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .men-collection {
         display: flex;
@@ -284,7 +286,7 @@ img {
         display: flex;
         flex-direction: column;
         margin: 1rem 1rem;
-        max-width: 100%;
+        max-width: 500px;
     }
 
     .content p {
