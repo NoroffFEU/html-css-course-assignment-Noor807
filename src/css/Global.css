@@ -81,11 +81,12 @@ nav {
   
 }
 
-label.logo {
+.logo {
     font-size: 35px;
     color: white;
     margin: 0 70px;
     line-height: 80px;
+    text-decoration: none;
 }
 
 nav ul {
@@ -108,8 +109,8 @@ nav ul li a {
 
 }
 
-nav ul li a .active,
-a:hover {
+nav ul li a:hover, .active
+ {
     background: #52b2bf;
 
 }
@@ -142,6 +143,7 @@ a:hover {
         height: 50vh;
         background: #022D36;
         position: fixed;
+        z-index: 2;
         top: 80px;
         left: -120%;
         margin: 0;
@@ -176,8 +178,6 @@ a:hover {
     margin-left: 2rem;
     width: 100%;
     max-width: 300px;
-
-
    
 }
 
@@ -187,6 +187,18 @@ a:hover {
 
 
     }
+
+
+}
+
+
+.men-heading {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    border-bottom: 2px solid white;
+    font-size: clamp(16px, 1vw + 1rem, 28px);
+    color: white;
+    width: 100%;
 
 
 }
