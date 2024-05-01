@@ -10,7 +10,7 @@ const img = document.querySelector(".product-img")
 const loaderDiv = document.getElementById('loader')
 
 
- const addCartButton =document.querySelector('.button')
+ const addCartButton =document.querySelector('.button-product')
 
 const parameterString = window.location.search;
 
