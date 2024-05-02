@@ -103,7 +103,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: capitalize;
     padding: 8px 20px;
 
@@ -111,7 +111,7 @@ nav ul li a {
 
 nav ul li a:hover, .active
  {
-    background: #52b2bf;
+    background: #056471;
 
 }
 
