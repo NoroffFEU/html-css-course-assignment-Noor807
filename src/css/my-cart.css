@@ -6,6 +6,74 @@
     min-height: 80vh;
 }
 
+.cart-summary {
+    justify-content: center;
+
+    >h2 {
+        max-width: fit-content;
+    }
+}
+
+.total-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.black-button {
+    background-color: #022D36;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 2px;
+    padding: 0.5rem 2rem;
+    max-width: 100px;
+
+}
+
+.local-storage {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+
+}
+
+.product-in-cart {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.single-item {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+
+
+@media only screen and (max-width: 610px) {
+    .form-style {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .cart-alignment {
+        margin-left: 1rem;
+
+    }
+
+
+}
+
 /* .cart-alignment {
     display: flex;
     width: 90%;
@@ -48,19 +116,7 @@
     }
 } */
 
-.cart-summary {
-    justify-content: center;
 
-    >h2 {
-        max-width: fit-content;
-    }
-}
-
-.total-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-}
 
 
 
@@ -130,58 +186,3 @@
 
     }
 } */
-.black-button {
-    background-color: #022D36;
-    color: #fff;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    margin-top: 2px;
-    padding: 0.5rem 2rem;
-    max-width: 100px;
-
-}
-
-.local-storage {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-
-
-}
-
-.product-in-cart {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.single-item {
-    border: 1px solid black;
-    padding: 1rem;
-    width: 100%;
-    max-width: 600px;
-
-}
-
-
-
-
-
-@media only screen and (max-width: 610px) {
-    .form-style {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .cart-alignment {
-        margin-left: 1rem;
-
-    }
-
-
-}
