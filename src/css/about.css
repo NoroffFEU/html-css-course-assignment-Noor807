@@ -41,6 +41,12 @@
     gap: 1rem;
     align-items: center;
 
+    p{
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+
 
 }
 .about-h2{
