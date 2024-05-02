@@ -18,14 +18,14 @@
 
 .explore-heading {
     align-content: flex-start;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-family: 'inter', sans-serif;
     font-size: clamp(15px, 1vw + 1rem, 36px);
 
 }
 
 .intro-paragraph {
-    margin: 1rem 1rem;
+    margin: 1rem 0.5rem;
 }
 
 
@@ -116,7 +116,6 @@ img {
     width: 100%;
     align-items: center;
     margin-left: 2rem;
-    padding-left: 2rem;
     gap: 4rem;
     height: fit-content;
 
