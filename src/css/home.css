@@ -61,7 +61,7 @@ img {
     justify-content: center;
     align-items: flex-start;
     border: 1px grey;
-    background-color: #B3C0C2;
+    background-color: lightgrey;
     width: 100%;
     max-width: 300px;
     padding: 0.5rem;
@@ -69,12 +69,7 @@ img {
 
 }
 
-/* .black-week{
-    width: 100%;
-    max-width: 1700px;
-   
 
-} */
 
 .seller-heading {
     margin: 1rem 0.5rem;
