@@ -1,5 +1,13 @@
 @import url(./Global.css);
 
+.cart-main{
+    width: 100%;
+    max-width: 80rem;
+    display: grid;
+    place-items: center;
+    min-height: 50vh;
+}
+
 .cart-summary{
     width: 100%;
     max-width: 500px; 
@@ -19,6 +27,11 @@
     width: 100%;
     max-width: 60px;
 
+}
+.total-box{
+    width: 100%;
+    height: 180px;
+    padding: 1rem;
 }
 .single-product{
     display: flex;
