@@ -69,6 +69,7 @@
     background-color: orange;
     color: black;
     text-align: center;
+    border: 1px solid black;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin-top: 1rem;

@@ -16,9 +16,10 @@
     gap: 10px;
 
     >a {
-        background-color:#022D36;
-        color: #fff;
+        background-color:orange;
+        color:black;
         padding: 0.5rem 1rem;
+        border: 1px solid black;
         text-decoration: none;
         margin-top: 2rem;
         margin-bottom: 7rem;
