@@ -68,8 +68,8 @@
         }
 
         >.submit-button {
-            background-color: #022D36;
-            color: #fff;
+            background-color: orange;
+            color:black;
             padding: 0.5rem 1rem;
             text-decoration: none;
             font-family: 'inter', sans-serif;
