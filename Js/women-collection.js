@@ -19,7 +19,7 @@ async function getFemaleJackets(){
     divJackets.innerHTML += `
        <a  class="jacket-item" href="../product/index.html?jacketid=${femaleJackets[i].id} ">
        <img src="${femaleJackets[i].image}" alt="${femaleJackets[i].title}"/>
-      <h3> ${femaleJackets[i].title}</h3>
+      <h2> ${femaleJackets[i].title}</h2>
       <p>${femaleJackets[i].baseColor} </p>
       <p>${femaleJackets[i].gender} </p>
       <p> ${femaleJackets[i].sizes} </p>
