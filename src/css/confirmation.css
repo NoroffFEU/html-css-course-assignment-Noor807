@@ -1,0 +1,62 @@
+@import url(./Global.css);
+
+.body-centered {
+    width: 90%;
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    >a {
+        background-color:orange;
+        color:black;
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        text-decoration: none;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+
+    }
+
+
+}
+
+
+
+.checkmark {
+    width: 100%;
+    max-width: 90px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.middle p {
+    margin: auto;
+    display: column;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 0.5rem;
+
+    >img {
+        margin-top: 7rem;
+    }
+
+}
+
+
+.Hiking-couple {
+    width: 100%;
+    max-width: 100%;
+}

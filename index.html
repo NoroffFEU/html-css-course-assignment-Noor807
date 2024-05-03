@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Title, replace me!</title>
-  <link rel="stylesheet" href="src/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Push the comfort zone with Rainydays.Jackets with style and comfort">
+    <title>Rainydays Home</title>
+    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="icon" sizes="32x32" href="./assets/imgsrc/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/477db4c9cb.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="centered">
-  <div>
-    <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-    <h1>Hello World!</h1>
-  </div>
+    <header>
+
+        <nav>
+            <input type="checkbox" id="check" name="check" />
+            <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+            <a href="./index.html" class="logo">Rainydays</a>
+            <ul>
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./men-collection/index.html">Men</a></li>
+                <li><a href="./women-collection/index.html">Women</a></li>
+                <li><a href="./contact/index.html">contact</a></li>
+                <li><a href="./checkout/index.html">Cart(<span class="cart-count"></span>)</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <img class="header-img" src="./assets/imgsrc/header-big-pic.jpg" alt="Man skiing on snowy mountain">
+    
+    <main class="main-body">
+
+        <h1 class="explore-heading">Explore RainyDays Collection</h1>
+        <p class="intro-paragraph">
+            Welcome to a world where style meets functionality
+            with our carefully curated Rainy Day Women's Jacket Collection.
+            Designed for the modern woman who refuses to compromise on fashion
+            or practicality, our collection features an array of stylish
+            jackets engineered to keep you dry and chic in any weather.
+        </p>
+
+        <section class="collection">
+            <div class="men-collection">
+                <img src="./assets/imgsrc/men-collectin1.jpg" alt="Men jacket collection">
+                <div class="content">
+                    <h2>Men's Collection</h2>
+                    <p>Step into a world where functionality meets style with our
+                        exclusive Rainy Day Men's Collection.
+                        Designed for the modern man who refuses to let the
+                        weather dictate his plans, our collection
+                        boasts an array of innovative jackets tailored specifically
+                        for rainy conditions.
+
+                    </p>
+
+                    <a class="male-btn shop-now" href="./men-collection/index.html"> Shop now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection">
+            <div class="men-collection">
+
+                <div class="content">
+                    <h2>Women collection</h2>
+                    <p>Don't let rainy days dull your sparkle. Embrace the rain
+                        with confidence and flair,
+                        courtesy of our Rainy Day Women's Jacket Collection.
+                        Because when it comes to conquering the weather,
+                        nothing beats the perfect blend
+                        of style and performance.</p>
+                    <a class="women-btn shop-now" href="./women-collection/index.html">Shop now</a>
+                </div>
+                <img src="./assets/imgsrc/women-collection2.jpg" alt="women jacket collection">
+            </div>
+
+        </section>
+
+        <h2 class="seller-heading">Our best-Collection</h2>
+
+
+        <div class="container">
+            <div class="jackets">
+
+                <div id="loader"> </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer id="dekstop-footer">
+        <div>
+            <a href="./index.html"><img src="./assets/imgsrc/rainydays-logo.png" alt="RainyDays_Logo"></a>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-col">
+
+                <a href="./about.rainydays/index.html">About us</a>
+                <a href="#">Privacy policy</a>
+                <a href="./contact/index.html">Contact us</a>
+            </div>
+
+            <div class="footer-col">
+                <a href="#">Accessibility</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+
+        <div class="socials-links">
+            <p> Follow us</p>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Js/index.js" type="module">
+
+    </script>
+
 </body>
+
+
 </html>
+
+

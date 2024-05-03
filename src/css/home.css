@@ -1,0 +1,204 @@
+@import url(./Global.css);
+@import url(./loader.css);
+
+
+.header-img {
+    width: 100%;
+    max-width: 2000px;
+
+}
+
+.main-body {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.explore-heading {
+    align-content: flex-start;
+    margin: 1rem auto;
+    font-family: 'inter', sans-serif;
+    font-size: clamp(15px, 1vw + 1rem, 36px);
+
+}
+
+.intro-paragraph {
+    margin: 1rem 0.5rem;
+}
+
+
+
+.jackets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    gap: 1rem;
+
+
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+
+
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+
+}
+
+
+.jacket-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px grey;
+    background-color: lightgrey;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    gap: 1rem;
+
+}
+
+
+
+.seller-heading {
+    margin: 1rem 0.5rem;
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-size: clamp(14px, 1vw + 1rem, 24px);
+
+}
+
+
+
+.men-collection {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid black;
+    background: #6998a2;
+
+
+}
+
+.men-collection img {
+    width: 100%;
+    max-width: 550px;
+
+    @media(max-width:1195px) {
+        max-width: 100%;
+    }
+
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 4rem;
+    height: fit-content;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem 0.3rem;
+
+
+}
+
+.content p {
+    width: 100%;
+    font-size: clamp(8px, 1vw + 1rem, 14px);
+}
+
+.shop-now {
+    background-color: orange;
+    color: black;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    max-width: 150px;
+
+}
+
+
+
+@media (max-width:1195px) {
+    .best-seller {
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .men-collection {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+
+    }
+
+    .seller-heading {
+        margin: 1rem 1rem;
+        width: 100%;
+        max-width: 400px;
+
+    }
+
+
+}
+
+@media (max-width:790px) {
+
+
+
+    .men-collection {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+
+    }
+
+    .collection {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem;
+        max-width: 450px;
+    }
+
+    .jacket-item {
+        max-width: 280px;
+    }
+
+
+
+
+
+}

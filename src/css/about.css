@@ -1,0 +1,137 @@
+@import url(./Global.css);
+
+
+
+.about-h1 {
+    margin: 2rem 4rem;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+
+.about-main {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+    img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    p {
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+}
+
+.lower {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+    img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    p {
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+
+}
+
+.girl-mountain {
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-h2 {
+    width: 100%;
+    margin: 2rem 4rem;
+    border-bottom: 1px solid black;
+
+}
+
+.about-contact-info {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.about-form {
+
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 3rem;
+    background-color:aliceblue;
+}
+
+
+.contact-container {
+    justify-content: left;
+    text-align: left;
+    display: column;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    row-gap: 3rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 0.4rem;
+        justify-self: flex-start;
+        margin: 0;
+
+        >textarea {
+            border-radius: 4px;
+            border: 0.5px solid grey;
+        }
+
+        >input {
+            max-width: 300;
+            border-radius: 4px;
+            border: 0.5px solid grey;
+            padding: 3px 2px;
+
+        }
+
+        >.submit-button {
+            background-color: orange;
+            color: black;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-family: 'inter', sans-serif;
+            font-style: bold;
+            font-size: 20px;
+
+        }
+
+
+    }
+}
