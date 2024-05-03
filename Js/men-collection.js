@@ -9,7 +9,7 @@ async function getMaleJackets(){
 
     const result = await req.json()
 
-        console.log("male object" , result)
+        
 
         const maleJackets = result.filter((jacket) => jacket.gender === "Male")
 
@@ -27,7 +27,7 @@ async function getMaleJackets(){
             
         </a>
          `
- console.log("filter on Female" , maleJackets)
+ 
 
 }
 

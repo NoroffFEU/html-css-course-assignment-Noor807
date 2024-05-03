@@ -23,7 +23,7 @@ let localStorageList = getFromStorage('jacketitem')
 let jacketDetail = {}
 
 
-// console.log(jacketId)
+
 
 
 async function getJacketDetail() {
@@ -35,7 +35,7 @@ async function getJacketDetail() {
   const result = await req.json()
   hideLoader();
   jacketDetail = result
-  console.log = (result)
+  
   img.src = `${result.image}`
   img.alt = `${result.title}`
   

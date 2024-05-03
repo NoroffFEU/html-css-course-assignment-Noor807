@@ -88,7 +88,7 @@
 
 function  removeOneFromCart(event){
 
-   console.log("dataset" , event)
+  
 
    cartItem.innerHTML = ""
 

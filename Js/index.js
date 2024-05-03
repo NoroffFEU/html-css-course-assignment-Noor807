@@ -45,7 +45,7 @@ async function getJackets() {
                        </a>` } 
                       
  
- console.log(result)
+ 
 } 
 
 function showLoader(){
